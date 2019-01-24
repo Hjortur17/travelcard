@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,500,700')
+
+::selection
+	@apply bg-grey-darker text-white
+
+body
+	font-family: 'Rubik', sans-serif
+	font-weight: 500
+	@apply text-grey-darker bg-grey-lightest
+
+header
+	background: url('/css/img/background.jpg')
+	background-size: cover
+	background-position: center bottom
+	background-repeat: no-repeat
+	min-height: 45vh
+	height: auto
+
+.angle
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%)
+	clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%)
+
+.no-angle
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+
+.btn
+	@apply bg-yellow-dark text-white py-4 px-6 text-center rounded-lg font-bold text-lg
+	text-decoration: none
+	text-transform: uppercase
+	transition: 180ms
+
+.noselect 
+	user-select: none
+
+.transition
+	transition: 200ms
+
+.link
+	text-decoration: none
+
+.min-65
+	min-height: 65vh
+
+
+@tailwind preflight
+
+@tailwind components
+
+@tailwind utilities
