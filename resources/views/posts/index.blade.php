@@ -14,12 +14,12 @@
 					<li class="pr-4 lg:pr-16 xl:pr-16">
 						<a class="text-white hover:text-yellow transition link font-medium" href="/um-okkur">Um Okkur</a>
 					</li>
-					{{-- <li class="pr-4 lg:pr-0 xl:pr-0">
+					<li class="pr-4 lg:pr-16 xl:pr-16">
 						<a class="text-white hover:text-yellow transition link font-medium" href="/q-and-a">Q&A</a>
-					</li> --}}{{-- 
-					<li>
+					</li>
+					<li class="pr-4 lg:pr-0 xl:pr-0">
 						<a class="text-white hover:text-yellow transition link font-medium" href="#" title="Íslenska"><img src="/css/img/icelandic-flag.png" class="h-4 w-auto"></a>
-					</li> --}}
+					</li>
 				</ul>
 			</div>
 		</div>
