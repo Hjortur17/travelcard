@@ -14,24 +14,19 @@
 					<li class="pr-4 lg:pr-16 xl:pr-16">
 						<a class="text-white hover:text-yellow transition link font-medium" href="/um-okkur">Um Okkur</a>
 					</li>
-					{{-- <li class="pr-4 lg:pr-0 xl:pr-0">
+					<li class="pr-4 lg:pr-0 xl:pr-0">
 						<a class="text-white hover:text-yellow transition link font-medium" href="/q-and-a">Q&A</a>
-					</li> --}}{{-- 
+					</li>
 					<li>
 						<a class="text-white hover:text-yellow transition link font-medium" href="#" title="Íslenska"><img src="/css/img/icelandic-flag.png" class="h-4 w-auto"></a>
-					</li> --}}
+					</li>
 				</ul>
 			</div>
-		</div>
-		<div class="container mx-auto px-4">
-			<h1 class="text-white text-4xl lg:text-5xl xl:text-6xl pt-12 pb-16 lg:pb-0 xl:pb-0 lg:pt-24 xl:pt-24 leading-normal">
-				Njótið sumarsins og fallegrar náttúru Íslands<span class="text-yellow-dark">.</span>
-			</h1>
 		</div>
 	</header>
 @endsection
 
-@section ('floating-element')
+{{-- @section ('floating-element')
 	<section class="h-80 min-h-full lg:relative xl:relative mt-24 mb-52 lg:mt-0 xl:mt-0 lg:mb-32 xl:mb-0">
 		<div class="container mx-auto px-4">
 			<div class="lg:absolute xl:absolute pin-t lg:-mt-24 xl:-mt-52" style="left: auto;">
@@ -44,9 +39,9 @@
 						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> Gildir fyrir tjald, fellihýsi, hjólhýsi, húsbíl eða tjaldvagn</p></li>
 					</ul>
 
-					{{-- <div class="text-center pt-8">
+					<div class="text-center pt-8">
 						<a href="" class="btn shadow hover:bg-yellow noselect">Kaupa núna</a>
-					</div> --}}
+					</div>
 
 					<div class="text-center pt-8 px-8">
 						<p class="text-grey-darker font-medium italic">Greiðslugátt opnar von bráðar þegar við tilkynnum tjaldsvæðin.</p>
@@ -55,10 +50,10 @@
 			</div>
 		</div>
 	</section>
-@endsection
+@endsection --}}
 
 @section ('section-1')
-	{{-- <section class="mb-24 pt-8">
+	<section class="mb-24 pt-8">
 		<div class="container mx-auto px-4 mb-6">
 			<div class="text-center">
 				<h1 class="text-4xl">Gagnalegar Upplýsingar</h1>
@@ -78,7 +73,7 @@
 				</div>
 			</div>
 		</div>
-	</section> --}}
+	</section>
 @endsection
 
 @section ('section-2')

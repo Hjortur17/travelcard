@@ -18,10 +18,18 @@ body {
 header {
   background: url("/css/img/background.jpg");
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
   min-height: 45vh;
   height: auto;
+}
+
+#loginBackground {
+  background: url("/css/img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .angle {
@@ -57,6 +65,10 @@ header {
           user-select: none;
 }
 
+.noresize {
+  resize: none;
+}
+
 .transition {
   transition: 200ms;
 }
@@ -65,8 +77,8 @@ header {
   text-decoration: none;
 }
 
-.min-65 {
-  min-height: 65vh;
+.break-all {
+  word-break: break-all;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -595,9 +607,9 @@ table {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .container {
-    max-width: 1200px;
+    max-width: 1300px;
   }
 }
 
@@ -3158,6 +3170,14 @@ table {
   height: 16rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
+.h-100 {
+  height: 40rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -3244,6 +3264,18 @@ table {
 
 .m-32 {
   margin: 8rem;
+}
+
+.m-40 {
+  margin: 10rem;
+}
+
+.m-45 {
+  margin: 12rem;
+}
+
+.m-52 {
+  margin: 15rem;
 }
 
 .m-auto {
@@ -3392,6 +3424,36 @@ table {
 .mx-32 {
   margin-left: 8rem;
   margin-right: 8rem;
+}
+
+.my-40 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.mx-40 {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.my-45 {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.mx-45 {
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+
+.my-52 {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.mx-52 {
+  margin-left: 15rem;
+  margin-right: 15rem;
 }
 
 .my-auto {
@@ -3638,6 +3700,54 @@ table {
   margin-left: 8rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mr-40 {
+  margin-right: 10rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
+.ml-40 {
+  margin-left: 10rem;
+}
+
+.mt-45 {
+  margin-top: 12rem;
+}
+
+.mr-45 {
+  margin-right: 12rem;
+}
+
+.mb-45 {
+  margin-bottom: 12rem;
+}
+
+.ml-45 {
+  margin-left: 12rem;
+}
+
+.mt-52 {
+  margin-top: 15rem;
+}
+
+.mr-52 {
+  margin-right: 15rem;
+}
+
+.mb-52 {
+  margin-bottom: 15rem;
+}
+
+.ml-52 {
+  margin-left: 15rem;
+}
+
 .mt-auto {
   margin-top: auto;
 }
@@ -3720,6 +3830,14 @@ table {
 
 .min-h-0 {
   min-height: 0;
+}
+
+.min-h-35 {
+  min-height: 35vh;
+}
+
+.min-h-65 {
+  min-height: 65vh;
 }
 
 .min-h-full {
@@ -5881,6 +5999,10 @@ table {
 
 .text-5xl {
   font-size: 3rem;
+}
+
+.text-6xl {
+  font-size: 5rem;
 }
 
 .italic {
@@ -8807,6 +8929,14 @@ table {
     height: 16rem;
   }
 
+  .sm\:h-80 {
+    height: 20rem;
+  }
+
+  .sm\:h-100 {
+    height: 40rem;
+  }
+
   .sm\:h-auto {
     height: auto;
   }
@@ -8893,6 +9023,18 @@ table {
 
   .sm\:m-32 {
     margin: 8rem;
+  }
+
+  .sm\:m-40 {
+    margin: 10rem;
+  }
+
+  .sm\:m-45 {
+    margin: 12rem;
+  }
+
+  .sm\:m-52 {
+    margin: 15rem;
   }
 
   .sm\:m-auto {
@@ -9041,6 +9183,36 @@ table {
   .sm\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
+  }
+
+  .sm\:my-40 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .sm\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .sm\:my-45 {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+  }
+
+  .sm\:mx-45 {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+  .sm\:my-52 {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .sm\:mx-52 {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 
   .sm\:my-auto {
@@ -9287,6 +9459,54 @@ table {
     margin-left: 8rem;
   }
 
+  .sm\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .sm\:mr-40 {
+    margin-right: 10rem;
+  }
+
+  .sm\:mb-40 {
+    margin-bottom: 10rem;
+  }
+
+  .sm\:ml-40 {
+    margin-left: 10rem;
+  }
+
+  .sm\:mt-45 {
+    margin-top: 12rem;
+  }
+
+  .sm\:mr-45 {
+    margin-right: 12rem;
+  }
+
+  .sm\:mb-45 {
+    margin-bottom: 12rem;
+  }
+
+  .sm\:ml-45 {
+    margin-left: 12rem;
+  }
+
+  .sm\:mt-52 {
+    margin-top: 15rem;
+  }
+
+  .sm\:mr-52 {
+    margin-right: 15rem;
+  }
+
+  .sm\:mb-52 {
+    margin-bottom: 15rem;
+  }
+
+  .sm\:ml-52 {
+    margin-left: 15rem;
+  }
+
   .sm\:mt-auto {
     margin-top: auto;
   }
@@ -9369,6 +9589,14 @@ table {
 
   .sm\:min-h-0 {
     min-height: 0;
+  }
+
+  .sm\:min-h-35 {
+    min-height: 35vh;
+  }
+
+  .sm\:min-h-65 {
+    min-height: 65vh;
   }
 
   .sm\:min-h-full {
@@ -11514,6 +11742,10 @@ table {
 
   .sm\:text-5xl {
     font-size: 3rem;
+  }
+
+  .sm\:text-6xl {
+    font-size: 5rem;
   }
 
   .sm\:italic {
@@ -14441,6 +14673,14 @@ table {
     height: 16rem;
   }
 
+  .md\:h-80 {
+    height: 20rem;
+  }
+
+  .md\:h-100 {
+    height: 40rem;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -14527,6 +14767,18 @@ table {
 
   .md\:m-32 {
     margin: 8rem;
+  }
+
+  .md\:m-40 {
+    margin: 10rem;
+  }
+
+  .md\:m-45 {
+    margin: 12rem;
+  }
+
+  .md\:m-52 {
+    margin: 15rem;
   }
 
   .md\:m-auto {
@@ -14675,6 +14927,36 @@ table {
   .md\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
+  }
+
+  .md\:my-40 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .md\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .md\:my-45 {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+  }
+
+  .md\:mx-45 {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+  .md\:my-52 {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .md\:mx-52 {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 
   .md\:my-auto {
@@ -14921,6 +15203,54 @@ table {
     margin-left: 8rem;
   }
 
+  .md\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .md\:mr-40 {
+    margin-right: 10rem;
+  }
+
+  .md\:mb-40 {
+    margin-bottom: 10rem;
+  }
+
+  .md\:ml-40 {
+    margin-left: 10rem;
+  }
+
+  .md\:mt-45 {
+    margin-top: 12rem;
+  }
+
+  .md\:mr-45 {
+    margin-right: 12rem;
+  }
+
+  .md\:mb-45 {
+    margin-bottom: 12rem;
+  }
+
+  .md\:ml-45 {
+    margin-left: 12rem;
+  }
+
+  .md\:mt-52 {
+    margin-top: 15rem;
+  }
+
+  .md\:mr-52 {
+    margin-right: 15rem;
+  }
+
+  .md\:mb-52 {
+    margin-bottom: 15rem;
+  }
+
+  .md\:ml-52 {
+    margin-left: 15rem;
+  }
+
   .md\:mt-auto {
     margin-top: auto;
   }
@@ -15003,6 +15333,14 @@ table {
 
   .md\:min-h-0 {
     min-height: 0;
+  }
+
+  .md\:min-h-35 {
+    min-height: 35vh;
+  }
+
+  .md\:min-h-65 {
+    min-height: 65vh;
   }
 
   .md\:min-h-full {
@@ -17148,6 +17486,10 @@ table {
 
   .md\:text-5xl {
     font-size: 3rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 5rem;
   }
 
   .md\:italic {
@@ -20075,6 +20417,14 @@ table {
     height: 16rem;
   }
 
+  .lg\:h-80 {
+    height: 20rem;
+  }
+
+  .lg\:h-100 {
+    height: 40rem;
+  }
+
   .lg\:h-auto {
     height: auto;
   }
@@ -20161,6 +20511,18 @@ table {
 
   .lg\:m-32 {
     margin: 8rem;
+  }
+
+  .lg\:m-40 {
+    margin: 10rem;
+  }
+
+  .lg\:m-45 {
+    margin: 12rem;
+  }
+
+  .lg\:m-52 {
+    margin: 15rem;
   }
 
   .lg\:m-auto {
@@ -20309,6 +20671,36 @@ table {
   .lg\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
+  }
+
+  .lg\:my-40 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .lg\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .lg\:my-45 {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+  }
+
+  .lg\:mx-45 {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+  .lg\:my-52 {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .lg\:mx-52 {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 
   .lg\:my-auto {
@@ -20555,6 +20947,54 @@ table {
     margin-left: 8rem;
   }
 
+  .lg\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .lg\:mr-40 {
+    margin-right: 10rem;
+  }
+
+  .lg\:mb-40 {
+    margin-bottom: 10rem;
+  }
+
+  .lg\:ml-40 {
+    margin-left: 10rem;
+  }
+
+  .lg\:mt-45 {
+    margin-top: 12rem;
+  }
+
+  .lg\:mr-45 {
+    margin-right: 12rem;
+  }
+
+  .lg\:mb-45 {
+    margin-bottom: 12rem;
+  }
+
+  .lg\:ml-45 {
+    margin-left: 12rem;
+  }
+
+  .lg\:mt-52 {
+    margin-top: 15rem;
+  }
+
+  .lg\:mr-52 {
+    margin-right: 15rem;
+  }
+
+  .lg\:mb-52 {
+    margin-bottom: 15rem;
+  }
+
+  .lg\:ml-52 {
+    margin-left: 15rem;
+  }
+
   .lg\:mt-auto {
     margin-top: auto;
   }
@@ -20637,6 +21077,14 @@ table {
 
   .lg\:min-h-0 {
     min-height: 0;
+  }
+
+  .lg\:min-h-35 {
+    min-height: 35vh;
+  }
+
+  .lg\:min-h-65 {
+    min-height: 65vh;
   }
 
   .lg\:min-h-full {
@@ -22784,6 +23232,10 @@ table {
     font-size: 3rem;
   }
 
+  .lg\:text-6xl {
+    font-size: 5rem;
+  }
+
   .lg\:italic {
     font-style: italic;
   }
@@ -23159,7 +23611,7 @@ table {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .xl\:list-reset {
     list-style: none;
     padding: 0;
@@ -25709,6 +26161,14 @@ table {
     height: 16rem;
   }
 
+  .xl\:h-80 {
+    height: 20rem;
+  }
+
+  .xl\:h-100 {
+    height: 40rem;
+  }
+
   .xl\:h-auto {
     height: auto;
   }
@@ -25795,6 +26255,18 @@ table {
 
   .xl\:m-32 {
     margin: 8rem;
+  }
+
+  .xl\:m-40 {
+    margin: 10rem;
+  }
+
+  .xl\:m-45 {
+    margin: 12rem;
+  }
+
+  .xl\:m-52 {
+    margin: 15rem;
   }
 
   .xl\:m-auto {
@@ -25943,6 +26415,36 @@ table {
   .xl\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
+  }
+
+  .xl\:my-40 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .xl\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .xl\:my-45 {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+  }
+
+  .xl\:mx-45 {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+  .xl\:my-52 {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .xl\:mx-52 {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 
   .xl\:my-auto {
@@ -26189,6 +26691,54 @@ table {
     margin-left: 8rem;
   }
 
+  .xl\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .xl\:mr-40 {
+    margin-right: 10rem;
+  }
+
+  .xl\:mb-40 {
+    margin-bottom: 10rem;
+  }
+
+  .xl\:ml-40 {
+    margin-left: 10rem;
+  }
+
+  .xl\:mt-45 {
+    margin-top: 12rem;
+  }
+
+  .xl\:mr-45 {
+    margin-right: 12rem;
+  }
+
+  .xl\:mb-45 {
+    margin-bottom: 12rem;
+  }
+
+  .xl\:ml-45 {
+    margin-left: 12rem;
+  }
+
+  .xl\:mt-52 {
+    margin-top: 15rem;
+  }
+
+  .xl\:mr-52 {
+    margin-right: 15rem;
+  }
+
+  .xl\:mb-52 {
+    margin-bottom: 15rem;
+  }
+
+  .xl\:ml-52 {
+    margin-left: 15rem;
+  }
+
   .xl\:mt-auto {
     margin-top: auto;
   }
@@ -26271,6 +26821,14 @@ table {
 
   .xl\:min-h-0 {
     min-height: 0;
+  }
+
+  .xl\:min-h-35 {
+    min-height: 35vh;
+  }
+
+  .xl\:min-h-65 {
+    min-height: 65vh;
   }
 
   .xl\:min-h-full {
@@ -28416,6 +28974,10 @@ table {
 
   .xl\:text-5xl {
     font-size: 3rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 5rem;
   }
 
   .xl\:italic {

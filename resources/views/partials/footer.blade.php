@@ -1,5 +1,5 @@
 <footer class="bg-blue-darkest pt-24 pb-8">
-	<div class="container mx-auto justify-center">
+	<div class="container mx-auto px-4 justify-center">
 		<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				<h2 class="font-medium text-white py-6">Vesturland</h2>
@@ -33,7 +33,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container mx-auto py-10">
+	<div class="container mx-auto px-4 py-10">
 		<div class="flex flex-row justify-center">
 			<div class="w-auto text-center">
 				<a href="#" class="bg-blue-darker text-blue-darkest text-xl m-2 rounded-full py-2 px-4 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
@@ -43,13 +43,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="container mx-auto">
+	<div class="container mx-auto px-4">
 		<div class="flex flex-row justify-between">
 			<div class="w-1/2 text-left">
-				<p class="font-light text-blue-darker">© TravelCard | 2018</p>
+				<p class="font-light text-gery-dark text-xs">© Travelcard Iceland | 2018</p>
 			</div>
 			<div class="w-1/2 text-right">
-				<p class="font-light text-blue-darker">travelcard@travelcard.is</p>
+				<p class="font-light text-gery-dark text-xs">travelcard@travelcard.is</p>
 			</div>
 		</div>
 	</div>

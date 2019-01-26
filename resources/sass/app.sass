@@ -11,10 +11,17 @@ body
 header
 	background: url('/css/img/background.jpg')
 	background-size: cover
-	background-position: center bottom
+	background-position: center 
 	background-repeat: no-repeat
 	min-height: 45vh
 	height: auto
+
+#loginBackground
+	background: url('/css/img/background.jpg')
+	background-size: cover
+	background-position: center 
+	background-repeat: no-repeat
+	height: 100vh
 
 .angle
 	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%)
@@ -33,14 +40,17 @@ header
 .noselect 
 	user-select: none
 
+.noresize
+	resize: none
+
 .transition
 	transition: 200ms
 
 .link
 	text-decoration: none
 
-.min-65
-	min-height: 65vh
+.break-all
+	word-break: break-all
 
 
 @tailwind preflight

@@ -1,34 +1,29 @@
 @extends ('layouts.master')
 
 @section ('header')
-	<nav>
-		<div class="container mx-auto">
-			<div class="flex justify-between pt-8">
-				<a href="/"><p class="text-3xl text-yellow-dark"><i class="far fa-campground"></i></p></a>
-				<ul class="list-reset flex">
-					<li class="mr-16">
-						<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/tjaldsvæði">Tjaldsvæði</a>
-					</li>
-					<li class="mr-16">
-						<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/um-okkur">Um Okkur</a>
-					</li>
-					<li>
-						<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="#" title="Íslenska"><img src="/css/img/icelandic-flag.png" class="h-4 w-auto"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	@include ('partials.blackNavbar')
 @endsection
 
 @section ('section-1')
 	<div class="container mx-auto py-12">
 		<div class="flex justify-between pt-8">
-			<div class="w-2/5 justify-center">
-				<img class="block h-64 w-64 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-4 sm:ml-0" src="/css/img/background.jpg" alt="">
+			<div class="w-2/5">
+				<img class="block rounded-lg w-full h-auto px-12" src="/css/img/background.jpg">
 			</div>
 			<div class="w-3/5">
-				<h1>Halló</h1>
+				<h1 class="text-4xl text-grey-darker mb-6">{{ $place->title  }}</h1>
+				<p class="font-light leading-loose text-md mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<ul class="list-reset">
+					<li class="font-light"><p class="mb-6 items-center "><i class="fas fa-check-circle pr-2 fa-lg"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit</p></li>
+					<li class="font-light"><p class="mb-6 items-center "><i class="fas fa-check-circle pr-2 fa-lg"></i> Assumenda, quia temporibus eveniet a libero incidunt suscipit</p></li>
+					<li class="font-light"><p class="mb-6 items-center "><i class="fas fa-check-circle pr-2 fa-lg"></i> Quidem, ipsam illum quis sed voluptatum quae eum fugit earum</p></li>
+				</ul>
 			</div>
 		</div>
 	</div>

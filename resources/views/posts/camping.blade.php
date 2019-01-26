@@ -1,24 +1,7 @@
 @extends ('layouts.master')
 
 @section ('header')
-	<nav>
-		<div class="container mx-auto">
-			<div class="flex justify-between pt-8">
-				<a href="/"><p class="text-3xl text-yellow-dark"><i class="far fa-campground"></i></p></a>
-				<ul class="list-reset flex">
-					<li class="mr-16">
-						<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/tjaldsvæði">Tjaldsvæði</a>
-					</li>
-					<li class="mr-16">
-						<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/um-okkur">Um Okkur</a>
-					</li>
-					<li>
-						<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="#" title="Íslenska"><img src="/css/img/icelandic-flag.png" class="h-4 w-auto"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	@include ('partials.blackNavbar')
 @endsection
 
 @section ('section-1')
@@ -29,102 +12,117 @@
 				<hr class="border-2 border-yellow-dark w-64">
 			</div>
 		</div>
+
 		<div class="container mx-auto mb-12">
-			<div class="flex justify-center">
-				<div class="w-1/5 items-center border-r-4 border-yellow-dark">
-					<h1>Vesturland</h1>
+			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
+				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
+					<h1 class="mb-4">Vesturland</h1>
 				</div>
-				<div class="w-4/5 px-12">
-					<div class="flex flex-wrap bg-grey-lighter">
-						<div class="w-64 p-2">
-							@if ($places->contains('part', 'Vesturland'))
-								@foreach ($places as $place)
+				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
+					<div class="flex bg-grey-lighter text-center items-center">
+						@if ($places->contains('part', 'Vesturland'))
+							@foreach ($places as $place)
+								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
 									<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
-								@endforeach
-							@else
+								</div>
+							@endforeach
+						@else
+							<div class="w-auto lg:w-64 xl:w-64 p-2 text-center">
 								<p class="font-light link text-grey-darker">Tilkynnum tjaldvæðin von bráðar</p>
-							@endif
-						</div>
+							</div>
+						@endif
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="container mx-auto mb-12">
-			<div class="flex justify-center">
-				<div class="w-1/5 border-r-4 border-yellow-dark">
-					<h1>Vestfirðir</h1>
+			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
+				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
+					<h1 class="mb-4">Vestfirðir</h1>
 				</div>
-				<div class="w-4/5 px-12">
-					<div class="flex flex-wrap bg-grey-lighter">
-						<div class="w-64 p-2">
-							@if ($places->contains('part', 'Vestfirðir'))
-								@foreach ($places as $place)
+				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
+					<div class="flex bg-grey-lighter text-center items-center">
+						@if ($places->contains('part', 'Vestfirðir'))
+							@foreach ($places as $place)
+								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
 									<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
-								@endforeach
-							@else
+								</div>
+							@endforeach
+						@else
+							<div class="w-auto lg:w-64 xl:w-64 p-2 text-center">
 								<p class="font-light link text-grey-darker">Tilkynnum tjaldvæðin von bráðar</p>
-							@endif
-						</div>
+							</div>
+						@endif
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="container mx-auto mb-12">
-			<div class="flex justify-center">
-				<div class="w-1/5 items-center border-r-4 border-yellow-dark">
-					<h1>Norðurland</h1>
+			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
+				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
+					<h1 class="mb-4">Norðurland</h1>
 				</div>
-				<div class="w-4/5 px-12">
-					<div class="flex flex-wrap bg-grey-lighter">
-						<div class="w-64 p-2">
-							@if ($places->contains('part', 'Norðurland'))
-								@foreach ($places as $place)
+				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
+					<div class="flex bg-grey-lighter text-center items-center">
+						@if ($places->contains('part', 'Norðurland'))
+							@foreach ($places as $place)
+								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
 									<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
-								@endforeach
-							@else
+								</div>
+							@endforeach
+						@else
+							<div class="w-auto lg:w-64 xl:w-64 p-2 text-center">
 								<p class="font-light link text-grey-darker">Tilkynnum tjaldvæðin von bráðar</p>
-							@endif
-						</div>
+							</div>
+						@endif
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="container mx-auto mb-12">
-			<div class="flex justify-center">
-				<div class="w-1/5 items-center border-r-4 border-yellow-dark">
-					<h1>Austurland</h1>
+			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
+				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
+					<h1 class="mb-4">Austurland</h1>
 				</div>
-				<div class="w-4/5 px-12">
-					<div class="flex flex-wrap bg-grey-lighter">
-						<div class="w-64 p-2">
-							@if ($places->contains('part', 'Austurland'))
-								@foreach ($places as $place)
+				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
+					<div class="flex bg-grey-lighter text-center items-center">
+						@if ($places->contains('part', 'Austurland'))
+							@foreach ($places as $place)
+								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
 									<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
-								@endforeach
-							@else
+								</div>
+							@endforeach
+						@else
+							<div class="w-auto lg:w-64 xl:w-64 p-2 text-center">
 								<p class="font-light link text-grey-darker">Tilkynnum tjaldvæðin von bráðar</p>
-							@endif
-						</div>
+							</div>
+						@endif
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="container mx-auto mb-12">
-			<div class="flex justify-center">
-				<div class="w-1/5 items-center border-r-4 border-yellow-dark">
-					<h1>Suðurland</h1>
+			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
+				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
+					<h1 class="mb-4">Suðurland</h1>
 				</div>
-				<div class="w-4/5 px-12">
-					<div class="flex flex-wrap bg-grey-lighter">
-						<div class="w-64 p-2">
-							@if ($places->contains('part', 'Suðurland'))
-								@foreach ($places as $place)
+				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
+					<div class="flex bg-grey-lighter text-center items-center">
+						@if ($places->contains('part', 'Suðurland'))
+							@foreach ($places as $place)
+								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
 									<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
-								@endforeach
-							@else
+								</div>
+							@endforeach
+						@else
+							<div class="w-auto lg:w-64 xl:w-64 p-2 text-center">
 								<p class="font-light link text-grey-darker">Tilkynnum tjaldvæðin von bráðar</p>
-							@endif
-						</div>
+							</div>
+						@endif
 					</div>
 				</div>
 			</div>
