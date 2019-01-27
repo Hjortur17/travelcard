@@ -5,7 +5,7 @@
 		<div class="container mx-auto px-4">
 			<div class="flex justify-between pt-8">
 				<div class="text-grey-darker pl-4 lg:pl-0 xl:pl-0">
-					<p class="text-3xl text-yellow-dark"><i class="far fa-campground"></i></p>
+					<img src="/css/img/logo.png" class="h-8 lg:h-16 xl:h-16">
 				</div>
 				<ul class="list-reset flex items-center">
 					<li class="pr-4 lg:pr-16 xl:pr-16">
