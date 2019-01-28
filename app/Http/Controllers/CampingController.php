@@ -19,7 +19,9 @@ class CampingController extends Controller
 
 	public function show($lang, $id) 
 	{
+		App::setlocale($lang);
 		$camping = Camping::findOrFail($id);
+		
 		return view('posts.show', ['camping' => $camping]);
 	}
 }

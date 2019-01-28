@@ -15,7 +15,6 @@ class Camping extends Model
 
 	public function path()
 	{
-		return "/{lang}/tjaldsvæði/{$this->id}";
-		action('CampingController@show', ['lang' => app()->getLocale(), 'id' => $this->id]);
+		return action('CampingController@show', ['lang' => app()->getLocale(), 'id' => $this->id]);
 	}
 }
