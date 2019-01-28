@@ -50,7 +50,7 @@
 				<p class="font-light text-gery-dark text-xs">Kt. 650119-1340</p>
 			</div>
 			<div class="w-auto lg:w-1/4 xl:w-1/4 text-center">
-				<p class="font-light text-gery-dark text-xs"><a href="mailto:travelcard@travelcard.is" class="font-light text-yellow-dark link">travelcard@travelcard.is</a> | <a href="phone:+3547711910" class="font-light text-yellow-dark link">+354 771-1910</a></p>
+				<p class="font-light text-gery-dark text-xs"><a href="mailto:travelcard@travelcard.is" class="font-light text-yellow-dark link">travelcard@travelcard.is</a> | <a href="tel:+354 7711910" class="font-light text-yellow-dark link">+354 771-1910</a></p>
 			</div>
 			<div class="w-auto lg:w-1/4 xl:w-1/4 text-right">
 				<strong><p class="font-light text-gery-dark text-xs">Gert með mikilli <i class="fas fa-heart text-red-light"></i> af <a href="https://hjorturfreyr.com" class="font-light text-yellow-dark link">Hirti Frey</a></p></strong>

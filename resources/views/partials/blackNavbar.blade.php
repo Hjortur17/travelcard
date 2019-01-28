@@ -16,24 +16,24 @@
 					<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="{{ route('qAndA', ['lang' => app()->getLocale()]) }}">Q&A</a>
 				</li>
 				@if (App::isLocale('en'))
-						<div class="navbar">
-							<div class="dropdown">
-								<input class="dropbtn h-4 w-auto" onclick="myFunction()" type="image" src="/css/img/english-flag.png"/>
-								<div class="dropdown-content" id="myDropdown">
-									<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/is" title="Icelandic"><img src="/css/img/icelandic-flag.png" class="h-4 w-auto"></a>
-								</div>
-							</div> 
-						</div>
-					@else
-						<div class="navbar">
-							<div class="dropdown">
-								<input class="dropbtn h-4 w-auto" onclick="myFunction()" type="image" src="/css/img/icelandic-flag.png"/>
-								<div class="dropdown-content" id="myDropdown">
-									<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/en" title="English"><img src="/css/img/english-flag.png" class="h-4 w-auto"></a>
-								</div>
-							</div> 
-						</div>
-					@endif
+					<div class="navbar">
+						<div class="dropdown">
+							<input class="dropbtn h-4 w-auto" onclick="myFunction()" type="image" src="/css/img/english-flag.png"/>
+							<div class="dropdown-content" id="myDropdown">
+								<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/is" title="Icelandic"><img src="/css/img/icelandic-flag.png" class="h-4 w-auto"></a>
+							</div>
+						</div> 
+					</div>
+				@else
+					<div class="navbar">
+						<div class="dropdown">
+							<input class="dropbtn h-4 w-auto" onclick="myFunction()" type="image" src="/css/img/icelandic-flag.png"/>
+							<div class="dropdown-content" id="myDropdown">
+								<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/en" title="English"><img src="/css/img/english-flag.png" class="h-4 w-auto"></a>
+							</div>
+						</div> 
+					</div>
+				@endif
 			</ul>
 		</div>
 	</div>
