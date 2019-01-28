@@ -2,6 +2,10 @@
 
 Auth::routes();
 
+Route::get('/', function () {
+    return redirect('/en');
+});
+
 Route::get('/{lang}', 'HomeController@index')->name('home');
 
 Route::get('/{lang}/um-okkur', 'AboutController@index')->name('about');
