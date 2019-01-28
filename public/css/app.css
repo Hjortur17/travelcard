@@ -3170,8 +3170,12 @@ table {
   height: 16rem;
 }
 
+.h-70 {
+  height: 70vh;
+}
+
 .h-80 {
-  height: 20rem;
+  height: 80vh;
 }
 
 .h-100 {
@@ -3838,6 +3842,14 @@ table {
 
 .min-h-65 {
   min-height: 65vh;
+}
+
+.min-h-70 {
+  min-height: 70vh;
+}
+
+.min-h-80 {
+  min-height: 80vh;
 }
 
 .min-h-full {
@@ -6002,7 +6014,7 @@ table {
 }
 
 .text-6xl {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .italic {
@@ -8929,8 +8941,12 @@ table {
     height: 16rem;
   }
 
+  .sm\:h-70 {
+    height: 70vh;
+  }
+
   .sm\:h-80 {
-    height: 20rem;
+    height: 80vh;
   }
 
   .sm\:h-100 {
@@ -9597,6 +9613,14 @@ table {
 
   .sm\:min-h-65 {
     min-height: 65vh;
+  }
+
+  .sm\:min-h-70 {
+    min-height: 70vh;
+  }
+
+  .sm\:min-h-80 {
+    min-height: 80vh;
   }
 
   .sm\:min-h-full {
@@ -11745,7 +11769,7 @@ table {
   }
 
   .sm\:text-6xl {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .sm\:italic {
@@ -14673,8 +14697,12 @@ table {
     height: 16rem;
   }
 
+  .md\:h-70 {
+    height: 70vh;
+  }
+
   .md\:h-80 {
-    height: 20rem;
+    height: 80vh;
   }
 
   .md\:h-100 {
@@ -15341,6 +15369,14 @@ table {
 
   .md\:min-h-65 {
     min-height: 65vh;
+  }
+
+  .md\:min-h-70 {
+    min-height: 70vh;
+  }
+
+  .md\:min-h-80 {
+    min-height: 80vh;
   }
 
   .md\:min-h-full {
@@ -17489,7 +17525,7 @@ table {
   }
 
   .md\:text-6xl {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .md\:italic {
@@ -20417,8 +20453,12 @@ table {
     height: 16rem;
   }
 
+  .lg\:h-70 {
+    height: 70vh;
+  }
+
   .lg\:h-80 {
-    height: 20rem;
+    height: 80vh;
   }
 
   .lg\:h-100 {
@@ -21085,6 +21125,14 @@ table {
 
   .lg\:min-h-65 {
     min-height: 65vh;
+  }
+
+  .lg\:min-h-70 {
+    min-height: 70vh;
+  }
+
+  .lg\:min-h-80 {
+    min-height: 80vh;
   }
 
   .lg\:min-h-full {
@@ -23233,7 +23281,7 @@ table {
   }
 
   .lg\:text-6xl {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .lg\:italic {
@@ -26161,8 +26209,12 @@ table {
     height: 16rem;
   }
 
+  .xl\:h-70 {
+    height: 70vh;
+  }
+
   .xl\:h-80 {
-    height: 20rem;
+    height: 80vh;
   }
 
   .xl\:h-100 {
@@ -26829,6 +26881,14 @@ table {
 
   .xl\:min-h-65 {
     min-height: 65vh;
+  }
+
+  .xl\:min-h-70 {
+    min-height: 70vh;
+  }
+
+  .xl\:min-h-80 {
+    min-height: 80vh;
   }
 
   .xl\:min-h-full {
@@ -28977,7 +29037,7 @@ table {
   }
 
   .xl\:text-6xl {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .xl\:italic {

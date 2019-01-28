@@ -15,6 +15,6 @@ class Camping extends Model
 
 	public function path()
 	{
-		return "/tjaldsvæði/{$this->id}"; 
+		return "/{lang}/tjaldsvæði/{$this->id}"; 
 	}
 }

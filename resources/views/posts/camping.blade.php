@@ -8,7 +8,7 @@
 	<section class="pb-32 pt-32">
 		<div class="container mx-auto mb-32">
 			<div class="text-center">
-				<h1 class="text-5xl">Tjaldsvæðin Okkar</h1>
+				<h1 class="text-5xl">@lang('camping.welcome')</h1>
 				<hr class="border-2 border-yellow-dark w-64">
 			</div>
 		</div>
@@ -28,7 +28,7 @@
 							@endforeach
 						@else
 							<div class="w-auto lg:w-64 xl:w-64 p-2 text-center">
-								<p class="font-light link text-grey-darker">Tilkynnum tjaldvæðin von bráðar</p>
+								<p class="font-light link text-grey-darker">@lang('camping.announcment')</p>
 							</div>
 						@endif
 					</div>
@@ -51,7 +51,7 @@
 							@endforeach
 						@else
 							<div class="w-auto lg:w-64 xl:w-64 p-2 text-center">
-								<p class="font-light link text-grey-darker">Tilkynnum tjaldvæðin von bráðar</p>
+								<p class="font-light link text-grey-darker">@lang('camping.announcment')</p>
 							</div>
 						@endif
 					</div>
@@ -74,7 +74,7 @@
 							@endforeach
 						@else
 							<div class="w-auto lg:w-64 xl:w-64 p-2 text-center">
-								<p class="font-light link text-grey-darker">Tilkynnum tjaldvæðin von bráðar</p>
+								<p class="font-light link text-grey-darker">@lang('camping.announcment')</p>
 							</div>
 						@endif
 					</div>
@@ -97,7 +97,7 @@
 							@endforeach
 						@else
 							<div class="w-auto lg:w-64 xl:w-64 p-2 text-center">
-								<p class="font-light link text-grey-darker">Tilkynnum tjaldvæðin von bráðar</p>
+								<p class="font-light link text-grey-darker">@lang('camping.announcment')</p>
 							</div>
 						@endif
 					</div>
@@ -120,7 +120,7 @@
 							@endforeach
 						@else
 							<div class="w-auto lg:w-64 xl:w-64 p-2 text-center">
-								<p class="font-light link text-grey-darker">Tilkynnum tjaldvæðin von bráðar</p>
+								<p class="font-light link text-grey-darker">@lang('camping.announcment')</p>
 							</div>
 						@endif
 					</div>

@@ -11,7 +11,7 @@
 				<img class="block rounded-lg w-full h-auto px-12" src="/css/img/background.jpg">
 			</div>
 			<div class="w-3/5">
-				<h1 class="text-4xl text-grey-darker mb-6">{{ $place->title  }}</h1>
+				<h1 class="text-4xl text-grey-darker mb-6">{{ $camping->title }}</h1>
 				<p class="font-light leading-loose text-md mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
