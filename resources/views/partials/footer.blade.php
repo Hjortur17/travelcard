@@ -4,31 +4,77 @@
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				<h2 class="font-medium text-white py-6">Vesturland</h2>
 				<ul class="list-reset px-2">
-					<li class="font-light pb-4 text-grey">@lang('footer.announcment')</li>
+					@if ($places->contains('part', 'Vesturland'))
+						@foreach ($places as $place)
+							<li>
+								<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
+							</li>
+						@endforeach
+					@else
+						<li>
+							<p class="font-light link text-grey-darker">@lang('camping.announcment')</p>
+						</li>
+					@endif
 				</ul>
 			</div>
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				<h2 class="font-medium text-white py-6">Vestfirðir</h2>
 				<ul class="list-reset px-2">
-					<li class="font-light pb-4 text-grey">@lang('footer.announcment')</li>
+					@if ($places->contains('part', 'Vestfirðir'))
+						@foreach ($places as $place)
+							<li>
+								<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
+							</li>
+						@endforeach
+					@else
+						<li>
+							<p class="font-light link text-grey-darker">@lang('camping.announcment')</p>
+						</li>
+					@endif
 				</ul>
 			</div>
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				<h2 class="font-medium text-white py-6">Norðurland</h2>
 				<ul class="list-reset px-2">
-					<li class="font-light pb-4 text-grey">@lang('footer.announcment')</li>
+					@if ($places->contains('part', 'Norðurland'))
+						@foreach ($places as $place)
+							<li>
+								<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
+							</li>
+						@endforeach
+					@else
+						<li>
+							<p class="font-light link text-grey-darker">@lang('camping.announcment')</p>
+						</li>
+					@endif
 				</ul>
 			</div>
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				<h2 class="font-medium text-white py-6">Austurland</h2>
 				<ul class="list-reset px-2">
-					<li class="font-light pb-4 text-grey">@lang('footer.announcment')</li>
+					@if ($places->contains('part', 'Austurland'))
+						@foreach ($places as $place)
+							<li>
+								<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
+							</li>
+						@endforeach
+					@else
+						<li>
+							<p class="font-light link text-grey-darker">@lang('camping.announcment')</p>
+						</li>
+					@endif
 				</ul>
 			</div>
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				<h2 class="font-medium text-white py-6">Suðurland</h2>
 				<ul class="list-reset px-2">
-					<li class="font-light pb-4 text-grey">@lang('footer.announcment')</li>
+					@if ($places->contains('part', 'Suðurland'))
+						@foreach ($places as $place)
+							<li>
+								<a href="{{ $place->path() }}" class="font-light link text-yellow-dark">{{ $place->title }}</a>
+							</li>
+						@endforeach
+					@endif
 				</ul>
 			</div>
 		</div>
@@ -53,7 +99,7 @@
 				<p class="font-light text-gery-dark text-xs"><a href="mailto:travelcard@travelcard.is" class="font-light text-yellow-dark link">travelcard@travelcard.is</a> | <a href="tel:+354 7711910" class="font-light text-yellow-dark link">+354 771-1910</a></p>
 			</div>
 			<div class="w-auto lg:w-1/4 xl:w-1/4 text-right">
-				<strong><p class="font-light text-gery-dark text-xs">Gert með mikilli <i class="fas fa-heart text-red-light"></i> af <a href="https://hjorturfreyr.com" class="font-light text-yellow-dark link">Hirti Frey</a></p></strong>
+				<strong><p class="font-light text-gery-dark text-xs">@lang('footer.me')</p></strong>
 			</div>
 		</div>
 	</div>

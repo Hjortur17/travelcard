@@ -6,17 +6,23 @@ use Illuminate\Http\Request;
 
 use App;
 
+use App\Camping;
+
 class AboutController extends Controller
 {
 	public function index($lang)
 	{
 		App::setlocale($lang);
-		return view('posts.about');
+
+		$places = Camping::latest()->get();
+		return view('posts.about', compact('places'));
 	}
 
 	public function show($lang)
 	{
 		App::setlocale($lang);
-		return view('posts.terms');
+
+		$places = Camping::latest()->get();
+		return view('posts.terms', compact('places'));
 	}
 }

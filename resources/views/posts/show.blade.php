@@ -1,10 +1,6 @@
-@extends ('layouts.master')
+@extends ('layouts.post')
 
-@section ('header')
-	@include ('partials.blackNavbar')
-@endsection
-
-@section ('section-1')
+@section ('main')
 	<div class="container mx-auto py-12">
 		<div class="flex justify-between pt-8">
 			<div class="w-3/5 px-12">
