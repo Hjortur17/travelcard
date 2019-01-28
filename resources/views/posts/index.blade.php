@@ -27,7 +27,7 @@
 			</div>
 		</div>
 		<div class="container mx-auto px-4">
-			<h1 class="text-white text-4xl lg:text-6xl xl:text-7xl pt-12 pb-16 lg:pb-0 xl:pb-0 lg:pt-16 xl:pt-16 leading-normal">
+			<h1 class="text-white text-4xl lg:text-6xl xl:text-6xl pt-12 pb-16 lg:pb-0 xl:pb-0 lg:pt-16 xl:pt-16 leading-normal">
 				@lang('header.welcome')<span class="text-yellow-dark">.</span>
 			</h1>
 		</div>
