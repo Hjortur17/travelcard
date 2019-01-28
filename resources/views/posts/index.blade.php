@@ -9,20 +9,36 @@
 				</div>
 				<ul class="list-reset flex items-center float-right">
 					<li class="pr-4 lg:pr-16 xl:pr-16">
-						<a class="text-white hover:text-yellow transition link font-medium" href="/{lang}/tjaldsvæði">@lang('header.camping_site')</a>
+						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('camping', ['lang' => app()->getLocale()]) }}">@lang('header.camping_site')</a>
 					</li>
 					<li class="pr-4 lg:pr-16 xl:pr-16">
-						<a class="text-white hover:text-yellow transition link font-medium" href="/{lang}/um-okkur">@lang('header.about_us')</a>
+						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('about', ['lang' => app()->getLocale()]) }}">@lang('header.about_us')</a>
 					</li>
 					<li class="pr-4 lg:pr-16 xl:pr-16">
-						<a class="text-white hover:text-yellow transition link font-medium" href="//{lang}/skilmalar">@lang('header.terms')</a>
+						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('terms', ['lang' => app()->getLocale()]) }}">@lang('header.terms')</a>
 					</li>
 					<li class="pr-4 lg:pr-16 xl:pr-16">
-						<a class="text-white hover:text-yellow transition link font-medium" href="/{lang}/q-and-a">Q&A</a>
+						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('qAndA', ['lang' => app()->getLocale()]) }}">@lang('header.qanda')</a>
 					</li>
-					<li class="pr-4 lg:pr-0 xl:pr-0">
-						<a class="text-white hover:text-yellow transition link font-medium" href="#" title="English"><img src="/css/img/english-flag.png" class="h-4 w-auto"></a>
-					</li>
+					@if (App::isLocale('en'))
+						<div class="navbar">
+							<div class="dropdown">
+								<input class="dropbtn h-4 w-auto" onclick="myFunction()" type="image" src="/css/img/english-flag.png"/>
+								<div class="dropdown-content" id="myDropdown">
+									<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/is" title="Icelandic"><img src="/css/img/icelandic-flag.png" class="h-4 w-auto"></a>
+								</div>
+							</div> 
+						</div>
+					@else
+						<div class="navbar">
+							<div class="dropdown">
+								<input class="dropbtn h-4 w-auto" onclick="myFunction()" type="image" src="/css/img/icelandic-flag.png"/>
+								<div class="dropdown-content" id="myDropdown">
+									<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/en" title="English"><img src="/css/img/english-flag.png" class="h-4 w-auto"></a>
+								</div>
+							</div> 
+						</div>
+					@endif
 				</ul>
 			</div>
 		</div>

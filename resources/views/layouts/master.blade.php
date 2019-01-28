@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ app()->getLocale() }}">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,6 +25,25 @@
 
 	<link rel="stylesheet" href="/css/app.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
+
+	<style>
+
+.dropdown {
+	float: right;
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	padding-top: 10px;
+	overflow: auto;
+	z-index: 1;
+}
+
+.show {display: block;}
+</style>
 </head>
 <body>
 	@yield ('header')
@@ -38,7 +57,6 @@
 	@include ('partials.footer')
 
 	<script src="/js/app.js" type="text/javascript"></script>
-	<script src="/js/header.js" type="text/javascript"></script>
 	<script src="/js/navbar.js" type="text/javascript"></script>
 </body>
 </html>
