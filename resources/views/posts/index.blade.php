@@ -45,10 +45,9 @@
 						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> @lang('floating.one')</p></li>
 						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> @lang('floating.two')</p></li>
 						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> @lang('floating.three')</p></li>
-						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> Fjölmargir sölustaðir</p></li>
+						{{-- <li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> Fjölmargir sölustaðir</p></li> --}}
 					</ul>
-					{{-- 
-					<div class="text-center pt-8">
+					{{-- <div class="text-center pt-8">
 						<a href="" class="btn shadow hover:bg-yellow noselect">Kaupa núna</a>
 					</div> --}}
 

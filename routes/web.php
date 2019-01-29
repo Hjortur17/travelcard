@@ -9,7 +9,6 @@ Route::get('/', function () {
 Route::get('/{lang}', 'HomeController@index')->name('home');
 
 Route::get('/{lang}/um-okkur', 'AboutController@index')->name('about');
-Route::get('/{lang}/skilmalar', 'AboutController@show')->name('terms');
 
 Route::post('/hafa-samband', 'ContactController@index');
 

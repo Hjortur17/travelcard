@@ -10,9 +10,6 @@
 					<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="{{ route('about', ['lang' => app()->getLocale()]) }}">@lang('header.about_us')</a>
 				</li>
 				<li class="pr-4 lg:pr-16 xl:pr-16">
-					<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="{{ route('terms', ['lang' => app()->getLocale()]) }}">@lang('header.terms')</a>
-				</li>
-				<li class="pr-4 lg:pr-16 xl:pr-16">
 					<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="{{ route('qAndA', ['lang' => app()->getLocale()]) }}">Q&A</a>
 				</li>
 				<li class="pr-4">

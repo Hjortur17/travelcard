@@ -2,10 +2,10 @@
 	// ENGLISH
 	return [
 		'welcome' 		=> 	'Um Okkur',
-		'welcome-2' 		=> 	'Skilmálar',
 		'side-1'		=>	'Aðeins um okkur',
-		'side-2'		=>	'Skilmálarnir okkar',
-		'side-3'		=>	'Upplýsingar',
+		'side-2'		=>	'Skilmálar',
+		'side-3'		=>	'Hafðu Samband',
+		'side-4'		=>	'Upplýsingar',
 		'para-1' 		=>	'Travelcard Iceland ehf öðrunafni ferðakortið er stofnað árið 2019.  Kortið gerir innlendum og erlendum ferðamönnum kleift að njóta á fallegustu tjaldsvæðum sem Ísland hefur uppá að bjóða á aðeins 17.990kr  .',
 		'para-2' 		=>	'Ferðakortið gildir fyrir TVO fullorðna og ótakmarkaðann fjölda barna s.s EITT tjald, fellihýsi, hjólhýsi, húsbíl eða tjaldvagn á meðan tjaldsvæði samstarfsaðila eru opin.  ',
 		'para-3' 		=>	'Ferðakortið inniheldur 28 gistinætur á meðan tímabili stendur (1.maí – 1.október) og einungis er leyfilegt að nota það í 4 NÆTUR á sama stað nema viðkomandi víkji í burtu yfir sólarhring er þá viðkomandi velkomið að snúa aftur í 4 nætur.   Við hjá Travelcard hlökkum til að hjálpa þér að láta ferðadrauma þína rætast á flottustu náttúruperlum Íslands. ',
