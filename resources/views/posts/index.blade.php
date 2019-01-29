@@ -39,7 +39,7 @@
 		<div class="container mx-auto px-4">
 			<div class="flex flex-col lg:flex-row xl:flex-row">
 				<div class="w-auto lg:w-2/5 xl:w-2/5 bg-white shadow-lg rounded-lg py-10 px-6 m-2">
-					{{-- <h1 class="text-3xl mb-8 text-center noselect">@lang('floating.price') <span class="text-5xl lg:text-6xl xl:text-6xl text-yellow-dark block"></h1> --}}
+					<h1 class="text-3xl mb-8 text-center noselect">@lang('floating.price') <span class="text-5xl lg:text-6xl xl:text-6xl text-yellow-dark block">17.990 kr.</h1>
 
 					<ul class="list-reset">
 						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> @lang('floating.one')</p></li>
