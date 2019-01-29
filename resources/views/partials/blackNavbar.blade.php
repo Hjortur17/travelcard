@@ -15,11 +15,11 @@
 				<li class="pr-4 lg:pr-16 xl:pr-16">
 					<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="{{ route('qAndA', ['lang' => app()->getLocale()]) }}">Q&A</a>
 				</li>
-				<li class="pr-4 lg:pr-16 xl:pr-16">
-					<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/en" title="English"><img src="/css/img/english-flag.png" class="h-4 w-auto"></a>
+				<li class="pr-4">
+					<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/is" title="Icelandic"><img src="/css/img/icelandic-flag.png" class="h-4 w-6"></a>
 				</li>
-				<li class="pr-4 lg:pr-0 xl:pr-0">
-					<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/is" title="Icelandic"><img src="/css/img/icelandic-flag.png" class="h-4 w-auto"></a>
+				<li class="pr-4">
+					<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/en" title="English"><img src="/css/img/english-flag.png" class="h-4 w-6"></a>
 				</li>
 			</ul>
 		</div>

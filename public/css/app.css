@@ -32,16 +32,6 @@ header {
   height: 100vh;
 }
 
-.angle {
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
-}
-
-.no-angle {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
 .btn {
   background-color: #f2d024;
   color: #fff;
@@ -75,6 +65,7 @@ header {
 
 .link {
   text-decoration: none;
+  color: #f2d024;
 }
 
 .break-all {

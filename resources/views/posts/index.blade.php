@@ -15,9 +15,6 @@
 						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('about', ['lang' => app()->getLocale()]) }}">@lang('header.about_us')</a>
 					</li>
 					<li class="pr-4 lg:pr-16 xl:pr-16">
-						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('terms', ['lang' => app()->getLocale()]) }}">@lang('header.terms')</a>
-					</li>
-					<li class="pr-4 lg:pr-16 xl:pr-16">
 						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('qAndA', ['lang' => app()->getLocale()]) }}">@lang('header.qanda')</a>
 					</li>
 					<li class="pr-4">
@@ -31,7 +28,7 @@
 		</div>
 		<div class="container mx-auto px-4">
 			<h1 class="text-white text-4xl lg:text-6xl xl:text-6xl pt-12 pb-16 lg:pb-0 xl:pb-0 lg:pt-16 xl:pt-16 leading-normal">
-				@lang('header.welcome')<span class="text-yellow-dark">.</span>
+				@lang('header.welcome')
 			</h1>
 		</div>
 	</header>
@@ -48,9 +45,10 @@
 						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> @lang('floating.one')</p></li>
 						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> @lang('floating.two')</p></li>
 						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> @lang('floating.three')</p></li>
+						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> Fjölmargir sölustaðir</p></li>
 					</ul>
-
-					{{-- <div class="text-center pt-8">
+{{-- 
+					<div class="text-center pt-8">
 						<a href="" class="btn shadow hover:bg-yellow noselect">Kaupa núna</a>
 					</div> --}}
 
@@ -66,7 +64,7 @@
 	</section>
 @endsection
 
-{{-- @section ('section-1')
+@section ('section-1')
 	<section class="mb-24 pt-8">
 		<div class="container mx-auto px-4 mb-6">
 			<div class="text-center">
@@ -75,12 +73,27 @@
 		</div>
 		<div class="container mx-auto">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
-				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
-					<h2 class="font-medium text-3xl"><i class="fas fa-phone pr-5"></i>Símanúmer</h2>
+				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg px-4 py-8 m-6">
+					<h2 class="font-medium text-center text-3xl"><i class="fas fa-phone pr-5"></i>Símanúmer</h2>
+
+					<ul class="list-reset mt-6">
+						<li class="mb-4">
+							<p class="font-light text-yellow-dark link"><span class="font-medium text-grey-darker">Landnúmer</span> +354</p>
+						</li>
+						<li class="mb-4">
+							<a class="font-light text-yellow-dark link" href="tel:112"><span class="font-medium text-grey-darker">Neyðarlínan</span> 112</a>
+						</li>
+						<li class="mb-4">
+							<a class="font-light text-yellow-dark link" href="tel:+354 444 2500"><span class="font-medium text-grey-darker">Lögregla</span> 444 2500</a>
+						</li>
+						<li class="mb-4">
+							<a class="font-light text-yellow-dark link" href="tel:+354 1818"><span class="font-medium text-grey-darker">Símaskrá</span> 1818, 1819</a>
+						</li>
+					</ul>
 				</div>
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
 					<h2 class="font-medium text-3xl"><i class="fas fa-cloud pr-5"></i>Veður</h2>
-					<p></p>
+					<p id="weather"></p>
 				</div>
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
 					<h2 class="font-medium text-3xl"><i class="fas fa-coins pr-5"></i>Gjaldmiðlar</h2>
@@ -89,7 +102,7 @@
 		</div>
 	</section>
 @endsection
- --}}
+
 @section ('section-2')
 	<section class="mb-24 pt-8">
 		<div class="container mx-auto px-4 mb-8">
