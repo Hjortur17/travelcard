@@ -23,47 +23,47 @@
 						<div class="w-full">
 							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
 								<strong>@lang('qa.q1')</strong> <br>
-								@lang('qa.q1')
+								@lang('qa.a1')
 							</p>
 
 							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
 								<strong>@lang('qa.q2')</strong> <br>
-								@lang('qa.q2')
+								@lang('qa.a2')
 							</p>
 
 							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
 								<strong>@lang('qa.q3')</strong> <br>
-								@lang('qa.q3')
+								@lang('qa.a3')
 							</p>
 
 							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
 								<strong>@lang('qa.q4')</strong> <br>
-								@lang('qa.q4')
+								@lang('qa.a4')
 							</p>
 
 							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
 								<strong>@lang('qa.q5')</strong> <br>
-								@lang('qa.q5')
+								@lang('qa.a5')
 							</p>
 
 							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
 								<strong>@lang('qa.q6')</strong> <br>
-								@lang('qa.q6')
+								@lang('qa.a6')
 							</p>
 
 							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
 								<strong>@lang('qa.q7')</strong> <br>
-								@lang('qa.q7')
+								@lang('qa.a7')
 							</p>
 
 							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
 								<strong>@lang('qa.q8')</strong> <br>
-								@lang('qa.q8')
+								@lang('qa.a8')
 							</p>
 
 							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
 								<strong>@lang('qa.q9')</strong> <br>
-								@lang('qa.q9')
+								@lang('qa.a9')
 							</p>
 
 							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
