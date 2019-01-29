@@ -47,7 +47,7 @@
 						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> @lang('floating.three')</p></li>
 						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> Fjölmargir sölustaðir</p></li>
 					</ul>
-{{-- 
+					{{-- 
 					<div class="text-center pt-8">
 						<a href="" class="btn shadow hover:bg-yellow noselect">Kaupa núna</a>
 					</div> --}}
@@ -64,7 +64,7 @@
 	</section>
 @endsection
 
-@section ('section-1')
+{{-- @section ('section-1')
 	<section class="mb-24 pt-8">
 		<div class="container mx-auto px-4 mb-6">
 			<div class="text-center">
@@ -101,7 +101,7 @@
 			</div>
 		</div>
 	</section>
-@endsection
+@endsection --}}
 
 @section ('section-2')
 	<section class="mb-24 pt-8">

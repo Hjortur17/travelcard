@@ -32,8 +32,8 @@
 	@yield ('section-1')
 
 	@yield ('section-2')
-	
-	@yield ('section-2')
+
+	@yield ('section-3')
 
 	@include ('partials.footer')
 
