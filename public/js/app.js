@@ -36391,57 +36391,6 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-$(document).ready(function () {
-  $.ajax({
-    'url': 'https://apis.is/weather/forecasts/is',
-    'type': 'GET',
-    'dataType': 'json',
-    'data': {
-      'stations': '1,422'
-    },
-    'success': function success(response) {
-      // console.log(response);
-      var i;
-
-      for (i = 0; i < response.results[0].forecast.length; i++) {
-        console.log(i);
-      }
-
-      var degrees = response.results[0].forecast[100].T; // W = lýsing
-
-      var city = response.results[0].name; // F = vindhraði
-
-      var wind = response.results[0].forecast[100].F; // D = vindátt
-
-      var windd = response.results[0].forecast[100].D; // T = gráður
-
-      $('#degrees').append(degrees);
-      $('#city').append(city);
-      $('#wind').append(wind);
-      $('#windd').append(windd); // let cities = '';
-      // $.each(response.results[0], function (key, res) {
-      // 	console.log(res);
-      // 	cities += '<li>'
-      // 		+ ' City name: ' + res.name
-      // 		+ '<ul>'
-      // 	;
-      // 	$.each(res.forecast, function (fkey, fore) {
-      // 		cities += '<li>'
-      // 			+ ' F: ' + fore.F
-      // 			+ ' D: ' + fore.D
-      // 			+ ' T: ' + fore.T
-      // 			+ ' W: ' + fore.W
-      // 			+ '</li>'
-      // 	;
-      // 	});
-      // 	cities += '</ul></li>';
-      // });
-      // 	$('#report').append(cities);
-      // },
-    }
-  });
-});
-
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
