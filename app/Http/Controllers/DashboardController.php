@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Camping;
+
 class DashboardController extends Controller
 {
      /**
@@ -23,7 +25,9 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard.index');
+        $camping = Camping::latest()->get();
+
+        return view('dashboard.index', compact('camping'));
     }
 
     /**

@@ -7,12 +7,34 @@
 
 require('./bootstrap');
 
-$.ajax({
-	'url': 'https://apis.is/weather/forecasts/is',
-	'type': 'GET',
-	'dataType': 'json',
-	'data': {'stations': '1,422'},
-	'success': function(response) {
-		console.log(response);
-	}
-});
+$(document).ready(function () {
+	$.ajax({
+		'url': 'https://apis.is/weather/forecasts/is',
+		'type': 'GET',
+		'dataType': 'json',
+		'data': {'stations': '1,422'},
+		'success': function (response) {
+			let cities = '';
+			$.each(response.results, function (key, res) {
+				// console.log(res);
+				cities += '<li>'
+					+ ' City name: ' + res.name
+					+ ' @ ' + res.atime
+					+ '<ul>'
+				;
+				$.each(res.forecast, function (fkey, fore) {
+					cities += '<li>'
+						+ ' ftime: ' + fore.ftime
+						+ ' F: ' + fore.F
+						+ ' D: ' + fore.D
+						+ ' T: ' + fore.T
+						+ ' W: ' + fore.W
+						+ '</li>'
+				;
+				});
+				cities += '</ul></li>';
+			});
+				$('#report').append(cities);
+			},
+		});
+	});

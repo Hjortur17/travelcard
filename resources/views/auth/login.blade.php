@@ -73,46 +73,42 @@
 @endsection --}}
 
 @section ('content')
-       <div class="flex items-center">
-              <div class="w-2/5">
-                     <div class="container mx-auto px-12">
-                            <h1 class="mb-2">Velkomin/nn</h1>
-                            
-                            <p class="font-light mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+       <section id="login">
+              <div class="container mx-auto px-4 py-32">
+                     <div class="flex justify-center">
+                            <div class="w-2/3 text-grey-darker text-center bg-white rounded-lg shadow-lg px-24 py-2 m-2">
+                                   <h1 class="pt-6 mb-12 text-yellow-dark">Innskráning</h1>
+                                   <form method="POST" action="{{ route('login') }}">
+                                          @csrf
 
-                            <form method="POST" action="{{ route('login') }}">
-                                   @csrf
+                                          <div class="w-100% mb-4">
+                                                 <input id="email" type="email" class="w-full bg-grey-lightest border-2 border-grey-light appearance-none rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none focus:border-yellow-dark font-light" name="email" value="{{ old('email') }}"  placeholder="Netfang" required autofocus>
 
-                                   <div class="w-100% mb-4">
-                                          <input id="email" type="email" class="w-full" name="email" value="{{ old('email') }}" required autofocus>
+                                                 @if ($errors->has('email'))
+                                                        <span class="invalid-feedback" role="alert">
+                                                               <strong>{{ $errors->first('email') }}</strong>
+                                                        </span>
+                                                 @endif
+                                          </div>
 
-                                          @if ($errors->has('email'))
-                                                 <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $errors->first('email') }}</strong>
-                                                 </span>
-                                          @endif
-                                   </div>
+                                          <div class="w-100%">
+                                                 <input id="password" type="password" class="w-full bg-grey-lightest border-2 border-grey-light appearance-none rounded w-full py-2 px-4 text-grey-darker leading-tight focus:outline-none focus:border-yellow-dark font-light" name="password" required placeholder="Lykilorð">
 
-                                   <div class="w-100%">
-                                          <input id="password" type="password" class="w-full" name="password" required>
+                                                 @if ($errors->has('password'))
+                                                        <span class="invalid-feedback" role="alert">
+                                                               <strong>{{ $errors->first('password') }}</strong>
+                                                        </span>
+                                                 @endif
+                                          </div>
 
-                                          @if ($errors->has('password'))
-                                                 <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $errors->first('password') }}</strong>
-                                                 </span>
-                                          @endif
-                                   </div>
-
-                                   <div class="flex justify-center mt-6">
-                                          <button type="submit">
-                                                 {{ __('Login') }}
-                                          </button>
-                                   </div>
-                            </form>
+                                          <div class="flex justify-center mt-6">
+                                                 <button type="submit" class="mb-6 py-4 px-6 bg-yellow-dark hover:bg-yellow transition text-white rounded-lg">
+                                                        {{ __('Login') }}
+                                                 </button>
+                                          </div>
+                                   </form>
+                            </div>
                      </div>
               </div>
-              <div class="w-3/5 w-auto" id="loginBackground">
-              </div>
-       </div>
+       </section>
 @endsection

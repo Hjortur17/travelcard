@@ -63,7 +63,7 @@
 	</section>
 @endsection
 
-{{-- @section ('section-1')
+@section ('section-1')
 	<section class="mb-24 pt-8">
 		<div class="container mx-auto px-4 mb-6">
 			<div class="text-center">
@@ -75,7 +75,7 @@
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg px-4 py-8 m-6">
 					<h2 class="font-medium text-center text-3xl"><i class="fas fa-phone pr-5"></i>Símanúmer</h2>
 
-					<ul class="list-reset mt-6">
+					<ul class="list-reset mt-6 px-8">
 						<li class="mb-4">
 							<p class="font-light text-yellow-dark link"><span class="font-medium text-grey-darker">Landnúmer</span> +354</p>
 						</li>
@@ -92,15 +92,15 @@
 				</div>
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
 					<h2 class="font-medium text-3xl"><i class="fas fa-cloud pr-5"></i>Veður</h2>
-					<p id="weather"></p>
+					<ul id="report" class="px-8"></ul>
 				</div>
-				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
+				{{-- <div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
 					<h2 class="font-medium text-3xl"><i class="fas fa-coins pr-5"></i>Gjaldmiðlar</h2>
-				</div>
+				</div> --}}
 			</div>
 		</div>
 	</section>
-@endsection --}}
+@endsection
 
 @section ('section-2')
 	<section class="mb-24 pt-8">

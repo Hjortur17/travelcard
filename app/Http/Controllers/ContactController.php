@@ -30,6 +30,6 @@ class ContactController extends Controller
               	$message->subject($data['subject']);
               });
 
-		return back();
+		return redirect()->route('home');
 	}
 }

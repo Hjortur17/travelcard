@@ -7,10 +7,9 @@ Route::get('/', function () {
 });
 
 Route::get('/{lang}', 'HomeController@index')->name('home');
-
 Route::get('/{lang}/um-okkur', 'AboutController@index')->name('about');
 
-Route::post('/hafa-samband', 'ContactController@index');
+Route::post('/hafa-samband', 'AboutController@store');
 
 Route::get('/{lang}/tjaldsvæði', 'CampingController@index')->name('camping');
 Route::get('/{lang}/tjaldsvæði/{id}', 'CampingController@show');
