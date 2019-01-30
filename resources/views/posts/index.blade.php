@@ -73,26 +73,28 @@
 		<div class="container mx-auto">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg px-4 py-8 m-6">
-					<h2 class="font-medium text-center text-3xl"><i class="fas fa-phone pr-5"></i>Símanúmer</h2>
+					<h2 class="font-medium text-center text-3xl"><i class="fas fa-phone pr-5"></i>@lang('info.phone')</h2>
 
 					<ul class="list-reset mt-6 px-8">
 						<li class="mb-4">
-							<p class="font-light text-yellow-dark link"><span class="font-medium text-grey-darker">Landnúmer</span> +354</p>
+							<p class="font-light text-yellow-dark link"><span class="font-medium text-grey-darker">@lang('info.country_code')</span> +354</p>
 						</li>
 						<li class="mb-4">
-							<a class="font-light text-yellow-dark link" href="tel:112"><span class="font-medium text-grey-darker">Neyðarlínan</span> 112</a>
+							<a class="font-light text-yellow-dark link" href="tel:112"><span class="font-medium text-grey-darker">@lang('info.emergancy')</span> 112</a>
 						</li>
 						<li class="mb-4">
-							<a class="font-light text-yellow-dark link" href="tel:+354 444 2500"><span class="font-medium text-grey-darker">Lögregla</span> 444 2500</a>
+							<a class="font-light text-yellow-dark link" href="tel:+354 444 2500"><span class="font-medium text-grey-darker">@lang('info.police')</span> 444 2500</a>
 						</li>
 						<li class="mb-4">
-							<a class="font-light text-yellow-dark link" href="tel:+354 1818"><span class="font-medium text-grey-darker">Símaskrá</span> 1818, 1819</a>
+							<a class="font-light text-yellow-dark link" href="tel:+354 1818"><span class="font-medium text-grey-darker">@lang('info.phone_book')</span> 1818, 1819</a>
 						</li>
 					</ul>
 				</div>
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
-					<h2 class="font-medium text-3xl"><i class="fas fa-cloud pr-5"></i>Veður</h2>
-					<ul id="report" class="px-8"></ul>
+					<h2 class="font-medium text-3xl"><i class="fas fa-cloud pr-5"></i>@lang('info.weather')</h2>
+					<h1 class="text-6xl mt-6" id="degrees"></h1>
+					<p id="city"></p>
+					<small><span id="windd"></span> <span id="wind"></span> m/s</small>
 				</div>
 				{{-- <div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
 					<h2 class="font-medium text-3xl"><i class="fas fa-coins pr-5"></i>Gjaldmiðlar</h2>
@@ -102,7 +104,7 @@
 	</section>
 @endsection
 
-@section ('section-2')
+{{-- @section ('section-2')
 	<section class="mb-24 pt-8">
 		<div class="container mx-auto px-4 mb-8">
 			<div class="text-center">
@@ -166,4 +168,4 @@
 			</div>
 		</div>
 	</section>
-@endsection
+@endsection --}}
