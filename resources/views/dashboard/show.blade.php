@@ -4,7 +4,7 @@
 	<div class="container mx-auto py-8 px-12 bg-red-light mb-6 mt-16 rounded-lg shadow">
 		<div class="flex">
 			<div class="w-full text-left text-xl">
-				<p class="font-bold text-white"><i class="fas fa-exclamation-circle pr-4 text-2xl"></i> Þessi síða er enþá í vinnslu. Því miður getur þú ekki gert neit hérna inná.</p>
+				<p class="font-bold text-white"><i class="fas fa-exclamation-circle pr-4 text-2xl"></i>Þessi síða er enþá í vinnslu. Því miður getur þú ekki gert neit hérna inná.</p>
 			</div>
 		</div>
 	</div>
@@ -17,7 +17,14 @@
 			</div>
 			<div class="w-1/2 text-right self-center">
 				<h1 class="text-white font-light text-lg mb-2">{{ Auth::user()->name }}</h1>
-				<p class="text-white font-light text-lg">Skrá út</p>
+
+				<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="link">
+					<p class="text-white font-bold uppercase text-sm">Skrá út</p>
+				</a>
+
+				<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+					{{ csrf_field() }}
+				</form>
 			</div>
 		</div>
 	</div>
@@ -49,14 +56,20 @@
 								<td class="pb-2 w-1/3">{{ $site->part }}</td>
 								<td class="pb-2 w-1/3">
 									<div class="flex">
-										<div class="w-auto text-lg"><i class="fal fa-pencil-alt pr-4 text-blue"></i></div>
-										<div class="w-auto text-lg"><i class="fal fa-trash-alt pr-4 text-red"></i></div>
+										<div class="w-auto text-lg">
+											<a id="editButton" onclick="openForm()" class="cursor-pointer text-blue hover:text-blue-light transition pr-4"><i class="fal fa-pencil-alt"></i></a>
+										</div>
+										<div class="w-auto text-lg">
+											<a id="deleteButton" onclick="openModel()" class="cursor-pointer text-red hover:text-red-light transition pr-4"><i class="fal fa-trash-alt"></i></a>
+										</div>
 									</div>
 								</td>
 							</tr>
 						@endforeach
 					</tbody>
 				</table>
+
+				{{ $camping->links() }}
 			</div>
 		</div>
 	</div>

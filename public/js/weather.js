@@ -5,18 +5,15 @@ $(document).ready(function () {
 		'dataType': 'json',
 		'data': {'stations': '1,422'},
 		'success': function (response) {
-			// console.log(response);
-			
-			let i;
-			for (i = 0; i < response.results[0].forecast.length; i++) {
-				console.log(i);
-			}
+			// let i;
+			// for (i = 0; i < response.results[0].forecast.length; i++) {
+			// 	console.log(i);
+			// }
 			
 			let degrees 	= 	response.results[0].forecast[100].T 				// W = lýsing
-			let city 	= 	response.results[0].name 					// F = vindhraði
+			let city 	= 	response.results[0].name 						// F = vindhraði
 			let wind 	= 	response.results[0].forecast[100].F  				// D = vindátt
 			let windd	= 	response.results[0].forecast[100].D 				// T = gráður
-
 
 			$('#degrees').append(degrees);
 			$('#city').append(city);

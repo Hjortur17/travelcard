@@ -24,4 +24,7 @@ Route::get('/stjornbord/bæta', 'DashboardController@index');
 Route::get('/stjornbord/breytta', 'DashboardController@show');
 
 
+Route::post('/stjornbord/bæta', 'DashboardController@store');
+
+
 

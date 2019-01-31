@@ -71,7 +71,7 @@
 					@if ($places->contains('part', 'Suðurland'))
 						@foreach ($places as $place)
 							<li>
-								<a href="{{ $place->path() }}" class="font-light link text-yellow-dark">{{ $place->title }}</a>
+								<a href="{{ $place->path() }}" class="font-light link text-yellow-dark pb-8">{{ $place->title }}</a>
 							</li>
 						@endforeach
 					@endif

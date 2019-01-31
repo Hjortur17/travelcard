@@ -16,11 +16,16 @@ class CreateCampingPlace extends Migration
         Schema::create('campings', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('en_title');
-            $table->string('place');
-            $table->string('part');
+            $table->string('en-title');
+            $table->string('state');
+            $table->string('address');
             $table->text('body');
-            $table->text('en_body');
+            $table->text('en-body');
+            $table->string('phone');
+            $table->string('email');
+            $table->string('website');
+            $table->string('opening');
+            $table->string('image_path');
             $table->timestamps();
         });
     }

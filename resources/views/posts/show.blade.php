@@ -4,34 +4,34 @@
 	<div class="container mx-auto py-12">
 		<div class="flex flex-col lg:flex-row xl:flex-row justify-between pt-8">
 			<div class="w-auto lg:w-3/5 xl:w-3/5 px-12 lg:px-4 xl:px-4">
-				<img class="block rounded-lg shadow-lg" src="/css/img/hraun.jpg">
+				<img class="block rounded-lg shadow-lg" src="{{ asset($camping->image_path) }}">
 
 				<div class="w-full h-auto bg-white shadow-lg rounded-lg mt-8 py-6 px-4">
 					<h2 class="text-yellow-dark mb-6 noselect">@lang('campsite.info')</h2>
 					<ul class="list-reset">
 						<li class="font-light">
 							<p class="mb-6 items-center">
-								<i class="fal fa-map-pin w-12 fa-lg text-center"></i>Hraunborgir, 801 Kiðjaberg, Iceland 
+								<i class="fal fa-map-pin w-12 fa-lg text-center"></i>{{ $camping->address }}
 							</p>
 						</li>
 						<li class="font-light">
 							<p class="mb-6 items-center">
-								<i class="fal fa-mobile w-12 fa-lg text-center"></i><a class="link " href="tel:+354 486-4414">486-4414</a>
+								<i class="fal fa-mobile w-12 fa-lg text-center"></i><a class="link " href="tel:+354 {{ $camping->phone }}">{{ $camping->phone }}</a>
 							</p>
 						</li>
 						<li class="font-light">
 							<p class="mb-6 items-center">
-								<i class="fal fa-envelope w-12 fa-lg text-center"></i><a class="link " href="mailto:hraunborgir801@gmail.com">hraunborgir801@gmail.com</a>
+								<i class="fal fa-envelope w-12 fa-lg text-center"></i><a class="link " href="mailto:{{ $camping->email }}">{{ $camping->email }}</a>
 							</p>
 						</li>
 						<li class="font-light">
 							<p class="mb-6 items-center">
-								<i class="fal fa-globe-europe w-12 fa-lg text-center"></i><a class="link " href="https://www.lavavillage.is">https://www.lavavillage.is</a>
+								<i class="fal fa-globe-europe w-12 fa-lg text-center"></i><a class="link " href="{{ $camping->website }}">{{ $camping->website }}</a>
 							</p>
 						</li>
 						<li class="font-light">
 							<p class="mb-6 items-center">
-								<i class="fal fa-calendar w-12 fa-lg text-center"></i>23. maí til 31. ágúst
+								<i class="fal fa-calendar w-12 fa-lg text-center"></i>{{ $camping->opening }}
 							</p>
 						</li>
 					</ul>

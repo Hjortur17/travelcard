@@ -17,5 +17,8 @@
 	@yield ('section-1')
 
 	@yield ('section-2')
+
+	<script src="/js/app.js" type="text/javascript"></script>
+	<script src="/js/dashboard.js" type="text/javascript"></script>
 </body>
 </html>

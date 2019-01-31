@@ -48,7 +48,35 @@ class DashboardController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'is-title'      =>      'required',
+            'en-title'      =>      'required',
+            'states'        =>      'required',
+            'address'       =>      'required',
+            'is-body'       =>      'required',
+            'en-body'       =>      'required',
+            'phone'         =>      'required',
+            'email'         =>      'required|email',
+            'website'       =>      'required',
+            'opening'       =>      'required',
+            'image'         =>      'required|image',
+        ]);
+
+        $camping = Camping::create([
+            'title'         =>      request('is-title'),     
+            'en-title'      =>      request('en-title'),  
+            'state'         =>      request('states'),     
+            'address'       =>      request('address'),   
+            'body'          =>      request('is-body'),      
+            'en-body'       =>      request('en-body'),   
+            'phone'         =>      request('phone'),     
+            'email'         =>      request('email'),     
+            'website'       =>      request('website'),   
+            'opening'       =>      request('opening'),
+            'image_path'    =>      request('image')->store('images', 'public')
+        ]);
+
+        return redirect('/stjornbord/bæta');
     }
 
     /**
@@ -59,7 +87,7 @@ class DashboardController extends Controller
      */
     public function show()
     {
-        $camping = Camping::latest()->get();
+        $camping = Camping::latest()->paginate(15);
 
         return view('dashboard.show', compact('camping'));
     }

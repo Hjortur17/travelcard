@@ -92,9 +92,10 @@
 				</div>
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
 					<h2 class="font-medium text-3xl"><i class="fas fa-cloud pr-5"></i>@lang('info.weather')</h2>
-					<h1 class="text-6xl mt-6" id="degrees"></h1>
+					<h1 class="text-7xl mt-6" id="degrees"></h1>
 					<p id="city"></p>
 					<small><span id="windd"></span> <span id="wind"></span> m/s</small>
+					<p class="mt-4"><a href="https://www.vedur.is/vedur/spar/stadaspar" class="link" target="_blank"><small>@lang('info.see_more')</small></a></p>
 				</div>
 				{{-- <div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
 					<h2 class="font-medium text-3xl"><i class="fas fa-coins pr-5"></i>Gjaldmiðlar</h2>
