@@ -105,7 +105,7 @@
 	</section>
 @endsection
 
-{{-- @section ('section-2')
+@section ('section-2')
 	<section class="mb-24 pt-8">
 		<div class="container mx-auto px-4 mb-8">
 			<div class="text-center">
@@ -169,4 +169,4 @@
 			</div>
 		</div>
 	</section>
-@endsection --}}
+@endsection
