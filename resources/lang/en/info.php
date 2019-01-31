@@ -1,7 +1,7 @@
 <?php  
 	// ICELANDIC
 	return [
-		'welcome'		=>	'Useful Information'
+		'welcome'		=>	'Useful Information',
 		'phone' 		=> 	'Phone',
 		'weather' 		=> 	'Weather',
 		'see_more' 		=> 	'See the weather in Iceland',
