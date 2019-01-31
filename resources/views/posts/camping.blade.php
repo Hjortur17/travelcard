@@ -16,7 +16,7 @@
 		<div class="container mx-auto mb-12">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
-					<h1 class="mb-4">Vesturland</h1>
+					<h1 class="mb-4">@lang('states.west')</h1>
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
 					<div class="flex bg-grey-lighter text-center items-center">
@@ -39,7 +39,7 @@
 		<div class="container mx-auto mb-12">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
-					<h1 class="mb-4">Vestfirðir</h1>
+					<h1 class="mb-4">@lang('states.westfjords')</h1>
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
 					<div class="flex bg-grey-lighter text-center items-center">
@@ -62,7 +62,7 @@
 		<div class="container mx-auto mb-12">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
-					<h1 class="mb-4">Norðurland</h1>
+					<h1 class="mb-4">@lang('states.north')</h1>
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
 					<div class="flex bg-grey-lighter text-center items-center">
@@ -85,7 +85,7 @@
 		<div class="container mx-auto mb-12">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
-					<h1 class="mb-4">Austurland</h1>
+					<h1 class="mb-4">@lang('states.east')</h1>
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
 					<div class="flex bg-grey-lighter text-center items-center">
@@ -108,7 +108,7 @@
 		<div class="container mx-auto mb-12">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
-					<h1 class="mb-4">Suðurland</h1>
+					<h1 class="mb-4">@lang('states.south')</h1>
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
 					<div class="flex bg-grey-lighter text-center items-center">
