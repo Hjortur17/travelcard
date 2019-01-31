@@ -67,7 +67,7 @@
 	<section class="mb-24 pt-8">
 		<div class="container mx-auto px-4 mb-6">
 			<div class="text-center">
-				<h1 class="text-4xl">Gagnalegar Upplýsingar</h1>
+				<h1 class="text-4xl">@lang('info.welcome')</h1>
 			</div>
 		</div>
 		<div class="container mx-auto">
