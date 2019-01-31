@@ -20,7 +20,7 @@
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
 					<div class="flex bg-grey-lighter text-center items-center">
-						@if ($places->contains('part', 'Vesturland'))
+						@if ($places->contains('state', 'vesturland'))
 							@foreach ($places as $place)
 								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
 									<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
@@ -43,7 +43,7 @@
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
 					<div class="flex bg-grey-lighter text-center items-center">
-						@if ($places->contains('part', 'Vestfirðir'))
+						@if ($places->contains('state', 'vestfirdir'))
 							@foreach ($places as $place)
 								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
 									<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
@@ -66,7 +66,7 @@
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
 					<div class="flex bg-grey-lighter text-center items-center">
-						@if ($places->contains('part', 'Norðurland'))
+						@if ($places->contains('state', 'nordurland'))
 							@foreach ($places as $place)
 								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
 									<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
@@ -89,7 +89,7 @@
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
 					<div class="flex bg-grey-lighter text-center items-center">
-						@if ($places->contains('part', 'Austurland'))
+						@if ($places->contains('state', 'austurland'))
 							@foreach ($places as $place)
 								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
 									<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
@@ -112,7 +112,7 @@
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
 					<div class="flex bg-grey-lighter text-center items-center">
-						@if ($places->contains('part', 'Suðurland'))
+						@if ($places->contains('state', 'sudurland'))
 							@foreach ($places as $place)
 								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
 									<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>

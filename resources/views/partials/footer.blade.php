@@ -4,7 +4,7 @@
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				<h2 class="font-medium text-white py-6">Vesturland</h2>
 				<ul class="list-reset px-2">
-					@if ($places->contains('part', 'Vesturland'))
+					@if ($places->contains('state', 'vesturland'))
 						@foreach ($places as $place)
 							<li>
 								<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
@@ -20,7 +20,7 @@
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				<h2 class="font-medium text-white py-6">Vestfirðir</h2>
 				<ul class="list-reset px-2">
-					@if ($places->contains('part', 'Vestfirðir'))
+					@if ($places->contains('state', 'vestfirdir'))
 						@foreach ($places as $place)
 							<li>
 								<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
@@ -36,7 +36,7 @@
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				<h2 class="font-medium text-white py-6">Norðurland</h2>
 				<ul class="list-reset px-2">
-					@if ($places->contains('part', 'Norðurland'))
+					@if ($places->contains('state', 'nordurland'))
 						@foreach ($places as $place)
 							<li>
 								<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
@@ -52,7 +52,7 @@
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				<h2 class="font-medium text-white py-6">Austurland</h2>
 				<ul class="list-reset px-2">
-					@if ($places->contains('part', 'Austurland'))
+					@if ($places->contains('state', 'austurland'))
 						@foreach ($places as $place)
 							<li>
 								<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
@@ -68,7 +68,7 @@
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				<h2 class="font-medium text-white py-6">Suðurland</h2>
 				<ul class="list-reset px-2">
-					@if ($places->contains('part', 'Suðurland'))
+					@if ($places->contains('state', 'sudurland'))
 						@foreach ($places as $place)
 							<li>
 								<a href="{{ $place->path() }}" class="font-light link text-yellow-dark pb-8">{{ $place->title }}</a>
