@@ -6,6 +6,10 @@ Route::get('/', function () {
     return redirect('/is');
 });
 
+Route::get('/stjornbord', function () {
+    return redirect('/stjornbord/bæta');
+});
+
 Route::get('/{lang}', 'HomeController@index')->name('home');
 Route::get('/{lang}/um-okkur', 'AboutController@index')->name('about');
 
@@ -16,7 +20,8 @@ Route::get('/{lang}/tjaldsvæði/{id}', 'CampingController@show');
 
 Route::get('/{lang}/q-and-a', 'QuestionController@index')->name('qAndA');
 
-Route::get('/stjornbord', 'DashboardController@index');
+Route::get('/stjornbord/bæta', 'DashboardController@index');
+Route::get('/stjornbord/breytta', 'DashboardController@show');
 
 
 

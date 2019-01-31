@@ -57,9 +57,11 @@ class DashboardController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $camping = Camping::latest()->get();
+
+        return view('dashboard.show', compact('camping'));
     }
 
     /**

@@ -14,9 +14,15 @@
 		</div>
 	</div>
 
-	<div class="container mx-auto py-8 px-12 bg-white rounded-lg shadow mb-12">
+	<div class="container mx-auto mb-12">
 		<div class="flex">
-			<div class="w-full text-left">
+			<div class="w-1/6 py-6 pr-4">
+				<ul class="list-reset">
+					<li class="mb-4"><a href="/stjornbord/bæta" class="link text-grey-darker hover:text-yellow-dark transition">Bæta við tjaldsvæði</a></li>
+					<li class="mb-4"><a href="/stjornbord/breytta" class="link text-grey-darker hover:text-yellow-dark transition">Breytta tjaldsvæðum</a></li>
+				</ul>
+			</div>
+			<div class="w-5/6 bg-white rounded-lg shadow text-left py-8 px-12">
 				<h1 class="text-yellow-dark mb-8">Bæta við tjaldsvæði</h1>
 				<form class="w-full">
 					<div class="flex flex-wrap -mx-3 mb-6">
