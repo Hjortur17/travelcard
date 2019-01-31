@@ -33,7 +33,7 @@ class AboutController extends Controller
                      'name' => 'required',
                      'email' => 'required|email',
                      'email' => 'required',
-                     'message' => 'required|min:20',
+                     'message' => 'required',
               ]);
 
               $data = array(
