@@ -154,7 +154,7 @@
 							</label>
 						</div>
 						<div class="md:w-4/5">
-							<textarea class="bg-white appearance-none rounded-lg w-full py-3 px-4 text-grey-darker leading-tight focus:outline-none border-2 border-white focus:border-yellow-dark shadow font-light noresize" id="inline-message" rows="4" name="message" placeholder="@lang('contact.message')"></textarea>
+							<textarea class="bg-white appearance-none rounded-lg w-full py-3 px-4 text-grey-darker leading-tight focus:outline-none border-2 border-white focus:border-yellow-dark shadow font-light noresize" id="inline-message" rows="5" name="message" placeholder="@lang('contact.message')"></textarea>
 						</div>
 					</div>
 					<div class="md:flex md:items-center justify-center text-center">

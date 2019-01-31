@@ -2,6 +2,7 @@
 	<div class="container mx-auto px-4 justify-center">
 		<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
+				{{-- <img src="/css/img/firdir/vl.jpg"> --}}
 				<h2 class="font-medium text-white py-6">Vesturland</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'vesturland'))

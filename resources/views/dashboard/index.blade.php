@@ -1,7 +1,7 @@
 @extends ('layouts.dashboard')
 
 @section ('header')
-	<div class="container mx-auto py-8 px-12 bg-yellow-dark mb-6 rounded-lg shadow">
+	<div class="container mx-auto py-8 px-12 bg-yellow-dark mb-6 rounded-lg shadow mt-12">
 		<div class="flex">
 			<div class="w-1/2 text-left">
 				<h1 class="text-white mb-4">Tjaldsvæði</h1>

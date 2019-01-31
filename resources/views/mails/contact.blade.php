@@ -1,30 +1,20 @@
 @extends ('layouts.mail')
 
-@section ('content')
-	<style type="text/css">
-		h1 {
-			font-family: 'Rubik', sans-serif;
-			font-size: 40px;
-		}
+@section ('main')
+	<div class="container mx-auto py-8 px-12 bg-yellow-dark mb-6 rounded-lg shadow mt-12">
+		<div class="flex">
+			<div class="w-full text-left">
+				<h1 class="text-white mb-4 text-xl">Frá: {{ $name }}</h1>
+				<h1 class="text-white text-xl">{{ $email }}</h1>
+			</div>
+		</div>
+	</div>
 
-		p {
-			font-family: 'Rubik';
-			font-weight: 300;
-			font-size: 17px;
-		}
-	</style>
-	<div class="columns is-mobile">
-		<div class="column is-three-fifths is-offset-one-fifth">
-			<header>
-				<h1>{{ $subject }}</h1>
-			</header>
-
-			<p>
-				Frá: {{ $name }} <br>
-				<a href="#">{{ $email }}</a>
-			</p>
-
-			<p>{{ $bodyMessage}}</p>
+	<div class="container mx-auto mb-12">
+		<div class="flex">
+			<div class="w-full bg-white rounded-lg shadow text-left py-8 px-12">
+				<p class="text-lg leading-normal">{{ $bodyMessage}}</p>
+			</div>
 		</div>
 	</div>
 @endsection
