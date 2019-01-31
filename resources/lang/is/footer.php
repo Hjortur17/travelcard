@@ -6,6 +6,6 @@
 		$close_link = "</a>",
 
 		'announcment' 	=>	"Tilkynnum tjaldvæðin von bráðar",
-		'me'			=>	"Gert með mikilli $heart af $open_link Hirti Frey $close_link"
+		'me'			=>	"Gert með mikilli $heart af $open_link Hirti Frey $close_link",
 	];
 ?>

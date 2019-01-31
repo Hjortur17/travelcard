@@ -3,7 +3,7 @@
 		<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				{{-- <img src="/css/img/firdir/vl.jpg"> --}}
-				<h2 class="font-medium text-white py-6">Vesturland</h2>
+				<h2 class="font-medium text-white py-6">@lang('states.west')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'vesturland'))
 						@foreach ($places as $place)
@@ -19,7 +19,7 @@
 				</ul>
 			</div>
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
-				<h2 class="font-medium text-white py-6">Vestfirðir</h2>
+				<h2 class="font-medium text-white py-6">@lang('states.westfjords')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'vestfirdir'))
 						@foreach ($places as $place)
@@ -35,7 +35,7 @@
 				</ul>
 			</div>
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
-				<h2 class="font-medium text-white py-6">Norðurland</h2>
+				<h2 class="font-medium text-white py-6">@lang('states.north')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'nordurland'))
 						@foreach ($places as $place)
@@ -51,7 +51,7 @@
 				</ul>
 			</div>
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
-				<h2 class="font-medium text-white py-6">Austurland</h2>
+				<h2 class="font-medium text-white py-6">@lang('states.east')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'austurland'))
 						@foreach ($places as $place)
@@ -67,7 +67,7 @@
 				</ul>
 			</div>
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
-				<h2 class="font-medium text-white py-6">Suðurland</h2>
+				<h2 class="font-medium text-white py-6">@lang('states.south')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'sudurland'))
 						@foreach ($places as $place)
