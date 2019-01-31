@@ -1,6 +1,7 @@
 <?php  
 	// ICELANDIC
 	return [
+		'welcome' 		=> 	'Gagnlegar Upplýsingar',
 		'phone' 		=> 	'Símanúmer',
 		'weather' 		=> 	'Veður',
 		'see_more' 		=> 	'Sjá meira um veðrir',
