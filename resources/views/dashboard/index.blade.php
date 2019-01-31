@@ -1,7 +1,15 @@
 @extends ('layouts.dashboard')
 
 @section ('header')
-	<div class="container mx-auto py-8 px-12 bg-yellow-dark mt-16 mb-6 rounded-lg shadow">
+	<div class="container mx-auto py-8 px-12 bg-red-light mb-6 mt-16 rounded-lg shadow">
+		<div class="flex">
+			<div class="w-full text-left text-xl">
+				<p class="font-bold text-white"><i class="fas fa-exclamation-circle pr-4 text-2xl"></i> Þessi síða er enþá í vinnslu. Því miður getur þú ekki gert neit hérna inná.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container mx-auto py-8 px-12 bg-yellow-dark mb-6 rounded-lg shadow">
 		<div class="flex">
 			<div class="w-1/2 text-left">
 				<h1 class="text-white mb-4">Tjaldsvæði</h1>
