@@ -87,7 +87,7 @@
 	<div class="container mx-auto px-4 py-10">
 		<div class="flex flex-row justify-center">
 			<div class="w-auto text-center">
-				<a href="https://www.instagram.com/travelcardiceland/" target="_blank" class="bg-blue-darker text-blue-darkest text-xl m-2 rounded-full py-2 px-4 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.instagram.com/travelcard.is" target="_blank" class="bg-blue-darker text-blue-darkest text-xl m-2 rounded-full py-2 px-4 hover:text-white transition"><i class="fab fa-instagram"></i></a>
 			</div>
 		</div>
 	</div>
