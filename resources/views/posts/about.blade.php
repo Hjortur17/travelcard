@@ -1,9 +1,5 @@
 @extends ('layouts.master')
 
-@section ('header')
-	@include ('partials.blackNavbar')
-@endsection
-
 @section ('section-1')
 	<section class="pt-16 mb-20">
 		<div class="container mx-auto px-4">
@@ -26,7 +22,7 @@
 			</div>
 		</div>
 
-		<div class="container mx-auto px-4 pt-20" id="about">
+		<div class="container mx-auto px-4 pt-20 focus:outline-none focus:appearance-none" id="about">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
 					<h1 class="mb-12">@lang('about.side-1')</h1>
@@ -49,7 +45,7 @@
 			</div>
 		</div>
 
-		<div class="container mx-auto px-4 pt-20" id="terms">
+		<div class="container mx-auto px-4 pt-20 focus:outline-none focus:appearance-none" id="terms">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
 					<h1 class="mb-12 break-all">@lang('about.side-2')</h1>
@@ -105,7 +101,7 @@
 			</div>
 		</div>
 
-		<div class="container mx-auto px-4 pt-20" id="contact">
+		<div class="container mx-auto px-4 pt-20 focus:outline-none focus:appearance-none" id="contact">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
 					<h1 class="mb-12">@lang('about.side-3')</h1>
