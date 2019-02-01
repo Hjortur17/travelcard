@@ -5,23 +5,23 @@
 		<div class="container mx-auto px-4">
 			<div class="flex justify-between pt-8">
 				<div class="text-grey-darker pl-4 lg:pl-0 xl:pl-0">
-					<img src="/css/img/logo.png" class="h-8 lg:h-24 xl:h-24">
+					<img src="/css/img/logo.png" class="h-8 lg:h-24 xl:h-24" alt="Logo | Travelcard Iceland">
 				</div>
 				<ul class="list-reset flex items-center float-right">
 					<li class="pr-4 lg:pr-16 xl:pr-16">
-						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('camping', ['lang' => app()->getLocale()]) }}">@lang('header.camping_site')</a>
+						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('camping', ['lang' => app()->getLocale()]) }}" title="Campingsites | Tjaldsvæði">@lang('header.camping_site')</a>
 					</li>
 					<li class="pr-4 lg:pr-16 xl:pr-16">
-						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('about', ['lang' => app()->getLocale()]) }}">@lang('header.about_us')</a>
+						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('about', ['lang' => app()->getLocale()]) }}" title="About Us | Um Okkur">@lang('header.about_us')</a>
 					</li>
 					<li class="pr-4 lg:pr-16 xl:pr-16">
-						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('qAndA', ['lang' => app()->getLocale()]) }}">@lang('header.qanda')</a>
+						<a class="text-white hover:text-yellow transition link font-medium" href="{{ route('qAndA', ['lang' => app()->getLocale()]) }}" title="Q&A">@lang('header.qanda')</a>
 					</li>
 					<li class="pr-4">
-						<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/is" title="Icelandic"><img src="/css/img/icelandic-flag.png" class="h-4 w-6"></a>
+						<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/is" title="Icelandic"><img src="/css/img/icelandic-flag.png" class="h-4 w-6" alt="Icelandic"></a>
 					</li>
 					<li class="pr-4 lg:pr-0 xl:pr-0">
-						<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/en" title="English"><img src="/css/img/english-flag.png" class="h-4 w-6"></a>
+						<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="/en" title="English"><img src="/css/img/english-flag.png" class="h-4 w-6" alt="English"></a>
 					</li>
 				</ul>
 			</div>
@@ -48,7 +48,7 @@
 						{{-- <li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> Fjölmargir sölustaðir</p></li> --}}
 					</ul>
 					{{-- <div class="text-center pt-8">
-						<a href="" class="btn shadow hover:bg-yellow noselect">Kaupa núna</a>
+						<a href="" class="btn shadow hover:bg-yellow noselect" title="Buy now | Kaupa núna">Kaupa núna</a>
 					</div> --}}
 
 					<div class="text-center pt-8 px-8">
@@ -80,13 +80,13 @@
 							<p class="font-light text-yellow-dark link"><span class="font-medium text-grey-darker">@lang('info.country_code')</span> +354</p>
 						</li>
 						<li class="mb-4">
-							<a class="font-light text-yellow-dark link" href="tel:112"><span class="font-medium text-grey-darker">@lang('info.emergancy')</span> 112</a>
+							<a class="font-light text-yellow-dark link" href="tel:112" title="Emergancy Service | Neyðarlínan"><span class="font-medium text-grey-darker">@lang('info.emergancy')</span> 112</a>
 						</li>
 						<li class="mb-4">
-							<a class="font-light text-yellow-dark link" href="tel:+354 444 2500"><span class="font-medium text-grey-darker">@lang('info.police')</span> 444 2500</a>
+							<a class="font-light text-yellow-dark link" href="tel:+354 444 2500" title="Police | Lögreglan"><span class="font-medium text-grey-darker">@lang('info.police')</span> 444 2500</a>
 						</li>
 						<li class="mb-4">
-							<a class="font-light text-yellow-dark link" href="tel:+354 1818"><span class="font-medium text-grey-darker">@lang('info.phone_book')</span> 1818, 1819</a>
+							<a class="font-light text-yellow-dark link" href="tel:+354 1818" title="Phone Book | Símaskrá"><span class="font-medium text-grey-darker">@lang('info.phone_book')</span> 1818, 1819</a>
 						</li>
 					</ul>
 				</div>
@@ -95,7 +95,7 @@
 					<h2 class="text-7xl mt-6" id="degrees"></h2>
 					<p id="city"></p>
 					<small><span id="windd"></span> <span id="wind"></span> m/s</small>
-					<p class="mt-4"><a href="https://www.vedur.is/vedur/spar/stadaspar" class="link" target="_blank"><small>@lang('info.see_more')</small></a></p>
+					<p class="mt-4"><a href="https://www.vedur.is/vedur/spar/stadaspar" class="link" target="_blank" title="Weather | Veður"><small>@lang('info.see_more')</small></a></p>
 				</div>
 				{{-- <div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
 					<h2 class="font-medium text-3xl"><i class="fas fa-coins pr-5"></i>Gjaldmiðlar</h2>
