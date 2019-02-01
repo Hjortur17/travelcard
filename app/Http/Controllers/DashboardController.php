@@ -31,6 +31,18 @@ class DashboardController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function campingAdd()
+    {
+        $camping = Camping::latest()->get();
+
+        return view('dashboard.index', compact('camping'));
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -85,7 +97,7 @@ class DashboardController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function campingEdit()
     {
         $camping = Camping::latest()->paginate(15);
 

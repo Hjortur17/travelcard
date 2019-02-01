@@ -27,9 +27,14 @@
 		<div class="flex">
 			<div class="w-1/6 py-6 pr-4">
 				<ul class="list-reset">
-					<li class="mb-4"><a href="/" class="link text-grey-darker hover:text-yellow-dark transition">Heim</a></li>
-					<li class="mb-4"><a href="/stjornbord/bæta" class="link text-grey-darker hover:text-yellow-dark transition">Bæta við tjaldsvæði</a></li>
-					<li class="mb-4"><a href="/stjornbord/breytta" class="link text-grey-darker hover:text-yellow-dark transition">Breytta tjaldsvæðum</a></li>
+					<li class="mb-2"><a href="/" class="link text-grey-darker hover:text-yellow-dark transition">Heim</a></li>
+					<li class="mb-2"><a href="/stjornbord" class="link text-grey-darker hover:text-yellow-dark transition">Stjórnborð</a></li>
+					<hr class="border-t-2 border-grey-light mb-6 mt-6">
+					<li class="mb-2"><a href="/stjornbord/tjaldsvæði/bæta" class="link text-grey-darker hover:text-yellow-dark transition">Bæta við tjaldsvæði</a></li>
+					<li class="mb-2"><a href="/stjornbord/tjaldsvæði/breytta" class="link text-grey-darker hover:text-yellow-dark transition">Breytta tjaldsvæðum</a></li>
+					<hr class="border-t-2 border-grey-light mb-6 mt-6">
+					<li class="mb-2"><a href="/stjornbord/sölustaðir/bæta" class="link text-grey-darker hover:text-yellow-dark transition">Bæta við sölustað</a></li>
+					<li class="mb-2"><a href="/stjornbord/sölustaðir/breytta" class="link text-grey-darker hover:text-yellow-dark transition">Breytta sölustað</a></li>
 				</ul>
 			</div>
 			<div class="w-5/6 bg-white rounded-lg shadow text-left py-8 px-12">

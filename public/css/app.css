@@ -72,6 +72,12 @@ header {
   color: #f2d024;
 }
 
+.dotted-underline {
+  border-bottom: 1px dashed;
+  text-decoration: none;
+  border-color: #38c172;
+}
+
 .break-all {
   word-break: break-all;
 }
