@@ -27,9 +27,9 @@
 			</div>
 		</div>
 		<div class="container mx-auto px-4">
-			<h1 class="text-white text-4xl lg:text-6xl xl:text-6xl pt-12 pb-16 lg:pb-0 xl:pb-0 lg:pt-16 xl:pt-16 leading-normal">
+			<h2 class="text-white text-4xl lg:text-6xl xl:text-6xl pt-12 pb-16 lg:pb-0 xl:pb-0 lg:pt-16 xl:pt-16 leading-normal">
 				@lang('header.welcome')
-			</h1>
+			</h2>
 		</div>
 	</header>
 @endsection
@@ -39,7 +39,7 @@
 		<div class="container mx-auto px-4">
 			<div class="flex flex-col lg:flex-row xl:flex-row">
 				<div class="w-auto lg:w-2/5 xl:w-2/5 bg-white shadow-lg rounded-lg py-10 px-6 m-2">
-					<h1 class="text-3xl mb-8 text-center noselect">@lang('floating.price') <span class="text-5xl lg:text-6xl xl:text-6xl text-yellow-dark block">17.990 kr.</h1>
+					<h2 class="text-3xl mb-8 text-center noselect">@lang('floating.price') <span class="text-5xl lg:text-6xl xl:text-6xl text-yellow-dark block">17.990 kr.</h2>
 
 					<ul class="list-reset">
 						<li class="font-light noselect"><p class="mb-6 items-center font-medium text-white text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i> @lang('floating.one')</p></li>
@@ -67,7 +67,7 @@
 	<section class="mb-24 pt-8">
 		<div class="container mx-auto px-4 mb-6">
 			<div class="text-center">
-				<h1 class="text-4xl">@lang('info.welcome')</h1>
+				<h2 class="text-4xl">@lang('info.welcome')</h2>
 			</div>
 		</div>
 		<div class="container mx-auto">
@@ -92,7 +92,7 @@
 				</div>
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
 					<h2 class="font-medium text-3xl"><i class="fas fa-cloud pr-5"></i>@lang('info.weather')</h2>
-					<h1 class="text-7xl mt-6" id="degrees"></h1>
+					<h2 class="text-7xl mt-6" id="degrees"></h2>
 					<p id="city"></p>
 					<small><span id="windd"></span> <span id="wind"></span> m/s</small>
 					<p class="mt-4"><a href="https://www.vedur.is/vedur/spar/stadaspar" class="link" target="_blank"><small>@lang('info.see_more')</small></a></p>
@@ -109,7 +109,7 @@
 	<section class="mb-24 pt-8">
 		<div class="container mx-auto px-4 mb-8">
 			<div class="text-center">
-				<h1 class="text-4xl">@lang('contact.contact')</h1>
+				<h2 class="text-4xl">@lang('contact.contact')</h2>
 			</div>
 		</div>
 		<div class="container mx-auto px-4">
