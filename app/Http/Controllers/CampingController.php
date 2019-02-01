@@ -11,10 +11,17 @@ class CampingController extends Controller
 {
 	public function index($lang)
 	{
-		$places = Camping::latest()->get(); 
-
 		App::setlocale($lang);
-		return view('posts.camping', compact('places'));
+		
+		$places = Camping::latest()->get(); 
+		
+		$vl_place = Camping::where('state', 'vesturland')->get();
+		$vf_places = Camping::where('state', 'vestfirdir')->get();
+		$n_places = Camping::where('state', 'nordurland')->get();
+		$a_places = Camping::where('state', 'austurland')->get();
+		$s_places = Camping::where('state', 'sudurland')->get();
+
+		return view('posts.camping', compact('places','vl_place','vf_places','n_places','n_places','a_places','s_places'));
 	}
 
 	public function show($lang, $id) 

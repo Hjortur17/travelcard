@@ -2,13 +2,13 @@
 	<div class="container mx-auto px-4 justify-center">
 		<div class="flex flex-col lg:flex-row xl:flex-row items-center justify-center">
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
-				<img class="w-32" src="/css/img/firdir/vl.png" alt="Vesturland / West">
+				<img class="w-32 mt-8 lg:mt-0 xl:mt-0" src="/css/img/firdir/vl.png" alt="Vesturland / West">
 				<h2 class="font-medium text-white py-6">@lang('states.west')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'vesturland'))
-						@foreach ($places as $place)
+						@foreach ($vl_places as $place)
 							<li>
-								<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
+								<a href="{{ $place->path() }}" class="font-light link pb-8">{{ $place->title }}</a>
 							</li>
 						@endforeach
 					@else
@@ -23,9 +23,9 @@
 				<h2 class="font-medium text-white py-6">@lang('states.westfjords')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'vestfirdir'))
-						@foreach ($places as $place)
+						@foreach ($vf_places as $place)
 							<li>
-								<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
+								<a href="{{ $place->path() }}" class="font-light link pb-8">{{ $place->title }}</a>
 							</li>
 						@endforeach
 					@else
@@ -40,9 +40,9 @@
 				<h2 class="font-medium text-white py-6">@lang('states.north')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'nordurland'))
-						@foreach ($places as $place)
+						@foreach ($n_places as $place)
 							<li>
-								<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
+								<a href="{{ $place->path() }}" class="font-light link pb-8">{{ $place->title }}</a>
 							</li>
 						@endforeach
 					@else
@@ -57,9 +57,9 @@
 				<h2 class="font-medium text-white py-6">@lang('states.east')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'austurland'))
-						@foreach ($places as $place)
+						@foreach ($a_places as $place)
 							<li>
-								<a href="{{ $place->path() }}" class="font-light link text-blue-light">{{ $place->title }}</a>
+								<a href="{{ $place->path() }}" class="font-light link pb-8">{{ $place->title }}</a>
 							</li>
 						@endforeach
 					@else
@@ -74,9 +74,9 @@
 				<h2 class="font-medium text-white py-6">@lang('states.south')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'sudurland'))
-						@foreach ($places as $place)
+						@foreach ($s_places as $place)
 							<li>
-								<a href="{{ $place->path() }}" class="font-light link text-yellow-dark pb-8">{{ $place->title }}</a>
+								<a href="{{ $place->path() }}" class="font-light link pb-8">{{ $place->title }}</a>
 							</li>
 						@endforeach
 					@endif
