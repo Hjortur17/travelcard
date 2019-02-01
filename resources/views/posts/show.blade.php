@@ -4,7 +4,7 @@
 	<div class="container mx-auto py-12">
 		<div class="flex flex-col lg:flex-row xl:flex-row justify-between pt-8">
 			<div class="w-auto lg:w-3/5 xl:w-3/5 px-12 lg:px-4 xl:px-4">
-				<img class="block rounded-lg shadow-lg" src="{{ asset('storage/' . $camping->image_path) }}">
+				<img class="block rounded-lg shadow-lg" src="{{ asset($camping->image_path) }}">
 
 				<div class="w-full h-auto bg-white shadow-lg rounded-lg mt-8 py-6 px-4">
 					<h2 class="text-yellow-dark mb-6 noselect">@lang('campsite.info')</h2>
