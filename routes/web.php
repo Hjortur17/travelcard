@@ -3,7 +3,7 @@
 Auth::routes();
 
 Route::get('/', function () {
-    return redirect('/is');
+    return redirect('/en');
 });
 
 Route::get('/stjornbord', function () {

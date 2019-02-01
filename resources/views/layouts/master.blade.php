@@ -8,7 +8,7 @@
 
 	<title>Travelcard Iceland</title>
 	<meta name="description" content="Great way to travel cheap and easy around Iceland.">
-	<meta name="keywords" content="Travel,Cheap,Iceland,Camping,Cheap travel in iceland">
+	<meta name="keywords" content="nature,útilegukort,útilegukortið,ódýrt,travel,cheap,iceland,camping,cheap travel in iceland">
   	<meta name="author" content="Travelcard Iceland">
 
   	<!-- Global site tag (gtag.js) - Google Analytics -->
