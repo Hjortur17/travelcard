@@ -2,6 +2,8 @@
 
 Auth::routes();
 
+Route::get('/sitemap','HomeController@sitemap');
+
 Route::get('/', function () {
     return redirect('/en');
 });
