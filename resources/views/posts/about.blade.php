@@ -5,15 +5,28 @@
 @endsection
 
 @section ('section-1')
-	<section class="pt-32">
-		<div class="container mx-auto px-4 mb-32">
+	<section class="pt-16 mb-20">
+		<div class="container mx-auto px-4">
 			<div class="text-center">
 				<h1 class="text-5xl">@lang('about.welcome')</h1>
 				<hr class="border-2 border-yellow-dark w-64">
+				<div class="flex justify-center mt-6">
+					<ul class="list-reset flex">
+						<li class="pl-8 pr-8">
+							<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="#about" title="About Us | Um Okkur">1. @lang('about.link_1')</a>
+						</li>
+						<li class="pl-8 pr-8">
+							<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="#terms" title="Terms | Skilmálar">2. @lang('about.link_2')</a>
+						</li>
+						<li class="pl-8 pr-8">
+							<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="#contact" title="Contact Us | Hafðu Samband">3. @lang('about.link_3')</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
-		<div class="container mx-auto px-4 mb-20">
+		<div class="container mx-auto px-4 pt-20" id="about">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
 					<h1 class="mb-12">@lang('about.side-1')</h1>
@@ -36,7 +49,7 @@
 			</div>
 		</div>
 
-		<div class="container mx-auto px-4 mb-20">
+		<div class="container mx-auto px-4 pt-20" id="terms">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
 					<h1 class="mb-12 break-all">@lang('about.side-2')</h1>
@@ -92,7 +105,7 @@
 			</div>
 		</div>
 
-		<div class="container mx-auto px-4 mb-20">
+		<div class="container mx-auto px-4 pt-20" id="contact">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 				<div class="w-auto lg:w-1/5 xl:w-1/5 items-center border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
 					<h1 class="mb-12">@lang('about.side-3')</h1>
@@ -156,4 +169,9 @@
 			</div>
 		</div>
 	</section>
+@endsection
+
+@section ('script-section')
+	<script src="/js/app.js" type="text/javascript"></script>
+	<script src="/js/smoothScroll.js" type="text/javascript"></script>
 @endsection
