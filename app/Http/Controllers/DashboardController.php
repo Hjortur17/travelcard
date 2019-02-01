@@ -49,12 +49,12 @@ class DashboardController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'is-title'      =>      'required',
-            'en-title'      =>      'required',
+            'title'         =>      'required',
+            'en_title'      =>      'required',
             'states'        =>      'required',
             'address'       =>      'required',
-            'is-body'       =>      'required',
-            'en-body'       =>      'required',
+            'body'          =>      'required',
+            'en_body'       =>      'required',
             'phone'         =>      'required',
             'email'         =>      'required|email',
             'website'       =>      'required',
@@ -63,17 +63,17 @@ class DashboardController extends Controller
         ]);
 
         $camping = Camping::create([
-            'title'         =>      request('is-title'),     
-            'en-title'      =>      request('en-title'),  
+            'title'         =>      request('title'),     
+            'en_title'      =>      request('en_title'),  
             'state'         =>      request('states'),     
             'address'       =>      request('address'),   
-            'body'          =>      request('is-body'),      
-            'en-body'       =>      request('en-body'),   
+            'body'          =>      request('body'),      
+            'en_body'       =>      request('en_body'),   
             'phone'         =>      request('phone'),     
             'email'         =>      request('email'),     
             'website'       =>      request('website'),   
             'opening'       =>      request('opening'),
-            'image_path'    =>      request('image')->store('images', 'public')
+            'image_path'    =>      request->file('image')->store('images', 'public')
         ]);
 
         return redirect('/stjornbord/bæta');

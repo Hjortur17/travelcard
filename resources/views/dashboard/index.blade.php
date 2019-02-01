@@ -57,7 +57,7 @@
 							<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
 								Íslenska - Nafn
 							</label>
-							<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark" id="grid-last-name" type="text" name="is-title" placeholder="Hraunborgir">
+							<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark" id="grid-last-name" type="text" name="title" placeholder="Hraunborgir">
 							@if ($errors->has('is-title'))
 								<div class="error">{{ $errors->first('is-title') }}</div>
 							@endif
@@ -66,7 +66,7 @@
 							<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-last-name">
 								Enska - Nafn
 							</label>
-							<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark" id="grid-last-name" type="text" name="en-title" placeholder="Lava village">
+							<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark" id="grid-last-name" type="text" name="en_title" placeholder="Lava village">
 							@if ($errors->has('en-title'))
 								<div class="error">{{ $errors->first('en-title') }}</div>
 							@endif
@@ -115,10 +115,7 @@
 							<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-text">
 								Íslenska - Um svæðið
 							</label>
-							<textarea rows="5" class="noresize appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark" id="grid-text" type="text" name="is-body" placeholder="Íslenka - Stutt um sviðið"></textarea>
-							@if ($errors->has('is-body'))
-								<div class="error">{{ $errors->first('is-body') }}</div>
-							@endif
+							<textarea rows="5" class="noresize appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark" id="grid-text" type="text" name="body" placeholder="Íslenka - Stutt um sviðið"></textarea>
 						</div>
 					</div>
 
@@ -127,9 +124,9 @@
 							<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-text">
 								Enska - Um svæðið
 							</label>
-							<textarea rows="5" class="noresize appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark" id="grid-text" type="text" name="en-body" placeholder="Enska - Stutt um svæðið"></textarea>
-							@if ($errors->has('en-body'))
-								<div class="error">{{ $errors->first('en-body') }}</div>
+							<textarea rows="5" class="noresize appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark" id="grid-text" type="text" name="en_body" placeholder="Enska - Stutt um svæðið"></textarea>
+							@if ($errors->has('en_body'))
+								<div class="error">{{ $errors->first('en_body') }}</div>
 							@endif
 						</div>
 					</div>
