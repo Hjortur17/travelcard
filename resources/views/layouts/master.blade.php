@@ -7,7 +7,10 @@
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
 	<title>Cheap camping in Iceland | Travelcard Iceland</title>
-	<meta name="description" content="Travelcard Iceland helps you fulfill your dreams and allows you to travel around the icelandic nature as cheap as possible and sleep under the open sky.">
+	<meta name="description" content="
+		Travelcard Iceland helps you fulfill your dreams and allows you to travel around the 
+		Icelandic nature as cheap as possible and sleep under the open sky.
+	">
 	<meta name="keywords" content="nature,útilegukort,útilegukortið,ódýrt,travel,cheap,iceland,camping,cheap travel in iceland">
   	<meta name="author" content="Travelcard Iceland">
 

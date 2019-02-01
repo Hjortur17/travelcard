@@ -27,9 +27,9 @@
 			</div>
 		</div>
 		<div class="container mx-auto px-4">
-			<h2 class="text-white text-4xl lg:text-6xl xl:text-6xl pt-12 pb-16 lg:pb-0 xl:pb-0 lg:pt-16 xl:pt-16 leading-normal">
+			<h1 class="text-white text-4xl lg:text-6xl xl:text-6xl pt-12 pb-16 lg:pb-0 xl:pb-0 lg:pt-16 xl:pt-16 leading-normal">
 				@lang('header.welcome')
-			</h2>
+			</h1>
 		</div>
 	</header>
 @endsection
@@ -56,7 +56,7 @@
 					</div>
 				</div>
 				<div class="w-auto lg:w-3/5 xl:w-3/5 bg-white shadow-lg rounded-lg py-0 px-0 m-2">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478924.787871247!2d-23.729594561697663!3d64.80140098476814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d22b52a3eb6043%3A0x6f8a0434e5c1459a!2sIceland!5e0!3m2!1sen!2sdk!4v1548633302180" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478924.787871247!2d-23.729594561697663!3d64.80140098476814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d22b52a3eb6043%3A0x6f8a0434e5c1459a!2sIceland!5e0!3m2!1sen!2sdk!4v1548633302180" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
