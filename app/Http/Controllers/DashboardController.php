@@ -73,7 +73,7 @@ class DashboardController extends Controller
             'email'         =>      request('email'),     
             'website'       =>      request('website'),   
             'opening'       =>      request('opening'),
-            'image_path'    =>      request->file('image')->store('images', 'public')
+            'image_path'    =>      request()->file('image')->store('images', 'public')
         ]);
 
         return redirect('/stjornbord/bæta');
