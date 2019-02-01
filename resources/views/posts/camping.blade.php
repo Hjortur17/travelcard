@@ -1,9 +1,5 @@
 @extends ('layouts.master')
 
-@section ('header')
-	@include ('partials.blackNavbar')
-@endsection
-
 @section ('section-1')
 	<section class="pt-16 mb-20">
 		<div class="container mx-auto">
