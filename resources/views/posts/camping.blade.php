@@ -15,8 +15,8 @@
 
 		<div class="container mx-auto mb-12">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
-				<div class="w-auto lg:w-1/5 xl:w-1/5 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
-					<img class="w-32 block mx-auto" src="/css/img/firdir/bvl.png">
+				<div class="w-auto lg:w-1/5 xl:w-1/5 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center">
+					<img class="w-32 block mx-auto opacity-75" src="/css/img/firdir/bvl.png">
 					<h1 class="mb-4">@lang('states.west')</h1>
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
@@ -39,8 +39,8 @@
 
 		<div class="container mx-auto mb-12">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
-				<div class="w-auto lg:w-1/5 xl:w-1/5 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
-					<img class="w-32 block mx-auto" src="/css/img/firdir/bvf.png">
+				<div class="w-auto lg:w-1/5 xl:w-1/5 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center">
+					<img class="w-32 block mx-auto opacity-75" src="/css/img/firdir/bvf.png">
 					<h1 class="mb-4">@lang('states.westfjords')</h1>
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
@@ -63,8 +63,8 @@
 
 		<div class="container mx-auto mb-12">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
-				<div class="w-auto lg:w-1/5 xl:w-1/5 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
-					<img class="w-32 block mx-auto" src="/css/img/firdir/bn.png">
+				<div class="w-auto lg:w-1/5 xl:w-1/5 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center">
+					<img class="w-32 block mx-auto opacity-75" src="/css/img/firdir/bn.png">
 					<h1 class="mb-4">@lang('states.north')</h1>
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
@@ -87,8 +87,8 @@
 
 		<div class="container mx-auto mb-12">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
-				<div class="w-auto lg:w-1/5 xl:w-1/5 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
-					<img class="w-32 block mx-auto" src="/css/img/firdir/ba.png">
+				<div class="w-auto lg:w-1/5 xl:w-1/5 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center">
+					<img class="w-32 block mx-auto opacity-75" src="/css/img/firdir/ba.png">
 					<h1 class="mb-4">@lang('states.east')</h1>
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
@@ -111,8 +111,8 @@
 
 		<div class="container mx-auto mb-12">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
-				<div class="w-auto lg:w-1/5 xl:w-1/5 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center lg:text-left xl:text-left">
-					<img class="w-32 block mx-auto" src="/css/img/firdir/bs.png">
+				<div class="w-auto lg:w-1/5 xl:w-1/5 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center">
+					<img class="w-32 block mx-auto opacity-75" src="/css/img/firdir/bs.png">
 					<h1 class="mb-4">@lang('states.south')</h1>
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
