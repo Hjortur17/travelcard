@@ -40,9 +40,6 @@ class GenerateSitemap extends Command
     public function handle()
     {
         SitemapGenerator::create('https://travelcard.is/en')
-            ->writeToFile(public_path('ensitemap.xml'));
-
-        SitemapGenerator::create('https://travelcard.is/is')
-            ->writeToFile(public_path('issitemap.xml'));
+            ->writeToFile(public_path('sitemap.xml'));
     }
 }
