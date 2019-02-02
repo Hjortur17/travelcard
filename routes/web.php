@@ -2,10 +2,12 @@
 
 Auth::routes();
 
-Route::get('/sitemap','HomeController@sitemap');
+Route::get('/sitemap', function () {
+	return view('sitemap.xml');
+});
 
 Route::get('/', function () {
-    return redirect('/en');
+	return redirect('/en');
 });
 
 Route::get('/stjornbord', 'DashboardController@index');

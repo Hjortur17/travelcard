@@ -23,9 +23,4 @@ class HomeController extends Controller
 
 		return view('posts.index', compact('places','vl_place','vf_places','n_places','n_places','a_places','s_places'));
 	}
-
-	public function sitemap()
-	{
-		return view('sitemap');
-	}
 }
