@@ -64,9 +64,10 @@
 					<small><span id="windd"></span> <span id="wind"></span> m/s</small>
 					<p class="mt-4"><a href="https://www.vedur.is/vedur/spar/stadaspar" class="link" target="_blank" title="Weather | Veður"><small>@lang('info.see_more')</small></a></p>
 				</div>
-				{{-- <div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
+				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
 					<h2 class="font-medium text-3xl"><i class="fas fa-coins pr-5"></i>Gjaldmiðlar</h2>
-				</div> --}}
+					<p id="someElement"></p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -141,4 +142,5 @@
 @section ('script-section')
 	<script src="/js/app.js" type="text/javascript"></script>
 	<script src="/js/weather.js" type="text/javascript"></script>
+	<script src="/js/currency.js" type="text/javascript"></script>
 @endsection

@@ -2,9 +2,7 @@
 
 Auth::routes();
 
-Route::get('/sitemap', function () {
-	return view('sitemap.xml');
-});
+// Route::get('/sitemap.xml', 'SitemapController@index');
 
 Route::get('/', function () {
 	return redirect('/en');
