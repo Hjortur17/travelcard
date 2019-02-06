@@ -31,10 +31,9 @@ class CampingController extends Controller
 		return view('posts.camping', compact('places','vl_places','vf_places','n_places','n_places','a_places','s_places'));
 	}
 
-	public function show($lang, $id) 
+	public function show($lang, Camping $camping) 
 	{
 		App::setlocale($lang);
-		$camping = Camping::findOrFail($id);
 		
 		return view('posts.show', ['camping' => $camping]);
 	}
@@ -71,13 +70,9 @@ class CampingController extends Controller
                      'opening'       =>      'required',
               ]);
 
-              // $data = $request->except('image_path','tags');
-              // $data->tags()->sync($request->tags, false);
-              // $data['image_path'] = request()->file('image_path')->store('images', 'public');
-              // $camping = Camping::create($data);
-
               $camping = Camping::create($request->except('tags'));
               $camping->image_path = $request->file('image_path')->store('images', 'public');
+              $camping->slug = str_slug($request->title);
               $camping->save();
               $camping->tags()->sync($request->tags);
 

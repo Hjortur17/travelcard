@@ -15,6 +15,7 @@ class CreateCampingPlace extends Migration
     {
         Schema::create('campings', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('slug')->unique();
             $table->string('title')->unique();
             $table->string('en_title')->unique();
             $table->string('state');
