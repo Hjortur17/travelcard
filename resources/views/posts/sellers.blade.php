@@ -7,28 +7,34 @@
 			<div class="flex flex-col lg:flex-row xl:flex-row">
 				<div class="w-full bg-white shadow-lg rounded-lg py-10 px-12 m-2">
 					<h2 class="text-5xl text-yellow-dark mb-2">Sölustaðirnir okkar</h2>
-					<p class="font-light mb-4">Við leggjum mikið metnað í að rækta góð sambönd við söluaðila út um allt land svo allir geti nálgast okkar kort í grend við sig.</p>
+					<p class="font-light mb-6">Við leggjum mikið metnað í að rækta góð sambönd við söluaðila út um allt land svo allir geti nálgast okkar kort í grend við sig.</p>
 
-					<ul class="list-reset mb-8">
+					<ul class="list-reset mb-6">
 						<li class="font-light text-sm"><a href="#" class="link"><i class="fas fa-filter pr-2 fa-sm"></i>Sía</a></li>
 					</ul>
 
-					<ul class="list-reset">
-						<div class="flex">
-							<div class="w-1/3">
-								<h3 class="mb-4">Sölustaður</h3>
-								<li class="font-light mb-6"><p>N1</p></li>
-							</div>
-							<div class="w-1/3">
-								<h3 class="mb-4">Landshluti</h3>
-								<li class="font-light mb-6"><p>Suðurland</p></li>
-							</div>
-							<div class="w-1/3">
-								<h3 class="mb-4">Heimilsfang</h3>
-								<li class="font-light mb-6"><p class="link font-medium">Austurvegi 48, 800 Selfoss</p></li>
-							</div>
+					<div class="flex">
+						<div class="w-full">
+							<table class="text-left w-full">
+								<thead class="flex w-full">
+									<tr class="flex w-full">
+										<th class="p-4 pl-0 w-1/3 text-lg">Nafn</th>
+										<th class="p-4 w-1/3 text-lg">Landshluti</th>
+										<th class="p-4 w-1/3 text-lg">Heimilsfang</th>
+									</tr>
+								</thead>
+								<tbody class="flex flex-col overflow-y-scroll w-full font-light">
+									@foreach ($sellers as $seller)
+										<tr class="flex w-full">
+											<td class="p-4 pl-0 w-1/3 text-md">{{ $seller->name }}</td>
+											<td class="p-4 w-1/3 text-md">{{ ucfirst($seller->state) }}</td>
+											<td class="p-4 pr-0 w-1/3 text-md"><a href="" class="link">{{ $seller->address }}</a></td>
+										</tr>
+									@endforeach
+								</tbody>
+							</table>
 						</div>
-					</ul>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCampingPlace extends Migration
+class CreateSellersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,11 @@ class CreateCampingPlace extends Migration
      */
     public function up()
     {
-        Schema::create('campings', function (Blueprint $table) {
+        Schema::create('sellers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title')->unique();
-            $table->string('en_title')->unique();
+            $table->string('name');
             $table->string('state');
             $table->string('address');
-            $table->text('body');
-            $table->text('en_body');
-            $table->string('phone');
-            $table->string('email');
-            $table->string('website');
-            $table->string('opening');
-            $table->string('image_path');
             $table->timestamps();
         });
     }
@@ -37,6 +29,6 @@ class CreateCampingPlace extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('camping_place');
+        Schema::dropIfExists('sellers');
     }
 }

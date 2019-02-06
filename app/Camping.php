@@ -17,4 +17,9 @@ class Camping extends Model
 	{
 		return action('CampingController@show', ['lang' => app()->getLocale(), 'id' => $this->id]);
 	}
+
+	public function tags()
+	{
+		return $this->belongsToMany('App\Tag');
+	}
 }

@@ -6,3 +6,21 @@
  */
 
 require('./bootstrap');
+
+window.Vue = require('vue');
+
+Vue.component('edit', require('./components/editThreadComponent.vue'));
+
+const app = new Vue({
+	el: '#app',
+});
+
+// $("#clickEdit").click(function() {
+// 	$("#overlay").css({ display: "block" });
+// })
+
+// $("#clickDelete").click(function() {
+// 	console.log('World');
+// })
+
+

@@ -12,12 +12,14 @@
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
 </head>
 <body>
-	@yield ('header')
+	<div id="app">
+		@yield ('header')
 
-	@yield ('section-1')
+		@yield ('section-1')
 
-	@yield ('section-2')
-
+		@yield ('section-2')
+	</div>
+	
 	<script src="/js/app.js" type="text/javascript"></script>
 	<script src="/js/dashboard.js" type="text/javascript"></script>
 </body>
