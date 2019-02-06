@@ -50,7 +50,7 @@
 					<li class="font-light">
 						<p class="mb-6 items-center text-3xl">
 							@foreach ($camping->tags as $tag)
-								<i class="fal fa-{{ $tag->value }} pr-4 pb-4"></i>
+								<i class="fal fa-{{ $tag->value }} pr-4 pb-4" title="{{ $tag->title }}"></i>
 							@endforeach
 						</p>
 					</li>

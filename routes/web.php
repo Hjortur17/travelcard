@@ -1,6 +1,6 @@
 <?php
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/', function () {
 	return redirect('/en');
@@ -17,7 +17,7 @@ Route::get('/{lang}/tjaldsvæði/{id}', 'CampingController@show');
 
 Route::get('/{lang}/q-and-a', 'QuestionController@index')->name('qAndA');
 
-Route::get 	('/stjornbord', 'DashboardController@index')->name('dashboard');
+Route::get 	('/stjornbord', 'DashboardController@index')->name('dashboard')->middleware('verified');
 
 Route::get 	('/stjornbord/notendur/bæta', 'UserController@index'); 				// Komið
 Route::post 	('/stjornbord/notendur/bæta', 'UserController@store');				// Komið

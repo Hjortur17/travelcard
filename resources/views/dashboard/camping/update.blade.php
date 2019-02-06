@@ -88,7 +88,7 @@
 									<p>Íslenska - Um svæðið</p>
 								</div>
 								<div class="w-5/6">
-									<textarea class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark noresize" type="text" name="body" rows="5">{{ $camping->body }}</textarea>
+									<textarea class="leading-normal appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark noresize" type="text" name="body" rows="5">{{ $camping->body }}</textarea>
 								</div>
 							</div>
 
@@ -97,7 +97,7 @@
 									<p>Enska - Um svæðið</p>
 								</div>
 								<div class="w-5/6">
-									<textarea class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark noresize" type="text" name="en_body" rows="5">{{ $camping->en_body }}</textarea>
+									<textarea class="leading-normal appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark noresize" type="text" name="en_body" rows="5">{{ $camping->en_body }}</textarea>
 								</div>
 							</div>
 
@@ -136,7 +136,7 @@
 									<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark" type="text" name="opening" value="{{ $camping->opening }}">
 								</div>
 							</div>
-
+							
 							<div class="flex items-center px-4 py-4">
 								<div class="w-1/6">
 									<p>Veldu nýja mynd</p>
