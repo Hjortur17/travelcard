@@ -112,13 +112,6 @@
 
 					<div class="flex">
 						<div class="w-full">
-
-							{{-- <div>EUR: <input type="text" id="EUR" class="convert-me" data-rate="1" value="0" readonly> </div>
-							<div>ISK: <input type="text" id="ISK" class="convert-me" data-rate="1" value="0" readonly> </div>
-							<div>USD: <input type="text" id="USD" class="convert-me" data-rate="1" value="0" readonly> </div>
-							<div>GBP: <input type="text" id="GBP" class="convert-me" data-rate="1" value="0" readonly> </div> --}}
-
-
 							<table class="w-full mt-4 no-strip">
 								<thead class="flex w-full">
 									<tr class="flex w-full">
@@ -192,8 +185,6 @@
 									</tr>
 								</tbody>
 							</table>
-
-							<p class="mt-4"><a href="https://www.vedur.is/vedur/spar/stadaspar" class="link" target="_blank" title="Weather | Veður"><small>Sjá fleiri gjaldmiðla</small></a></p>
 						</div>
 					</div>
 				</div>
