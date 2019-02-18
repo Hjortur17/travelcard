@@ -88,7 +88,6 @@ class CampingController extends Controller
 
        public function update(Request $request, $id)
        {
-              // $data = Camping::where('id', '=', $id)->first();
               $data = $request->except('image_path');
               $data['image_path'] = request()->file('image_path')->store('images', 'public');
               $camping->update($data);

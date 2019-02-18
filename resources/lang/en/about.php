@@ -6,6 +6,7 @@
 		'link_1'		=> 	'About Us',
 		'link_2'		=>	'Terms',
 		'link_3'		=>	'Contact Us',
+		'link_4'		=>	'Selling Points',
 		
 		'side-1'		=>	'Little about us',
 		'side-2'		=>	'Our Terms',

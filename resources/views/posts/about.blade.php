@@ -9,14 +9,19 @@
 				<div class="flex justify-center mt-6">
 					<ul class="list-reset flex">
 						<li class="pl-8 pr-8">
-							<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="#about" title="About Us | Um Okkur">1. @lang('about.link_1')</a>
+							<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="#about" title="About Us | Um Okkur">@lang('about.link_1')</a>
 						</li>
 						<li class="pl-8 pr-8">
-							<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="#terms" title="Terms | Skilmálar">2. @lang('about.link_2')</a>
+							<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="#terms" title="Terms | Skilmálar">@lang('about.link_2')</a>
 						</li>
 						<li class="pl-8 pr-8">
-							<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="#contact" title="Contact Us | Hafðu Samband">3. @lang('about.link_3')</a>
+							<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="#contact" title="Contact Us | Hafðu Samband">@lang('about.link_3')</a>
 						</li>
+						@if ($sellers->count() > 0)
+							<li class="pl-8 pr-8">
+								<a class="text-grey-darker hover:text-yellow-dark transition link font-medium" href="{{ route('sellers', ['lang' => app()->getLocale()]) }}" title="Selling points | Sölustaðir">@lang('about.link_4')</a>
+							</li>
+						@endif
 					</ul>
 				</div>
 			</div>

@@ -1,6 +1,6 @@
 <footer class="bg-blue-darkest pt-24 pb-8">
 	<div class="container mx-auto px-4 justify-center">
-		<div class="flex flex-col lg:flex-row xl:flex-row items-start justify-center">
+		<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
 				<img class="w-32 mt-8 lg:mt-0 xl:mt-0" src="/css/img/firdir/vl.png" alt="Vesturland / West">
 				<h2 class="font-medium text-white py-6">@lang('states.west')</h2>

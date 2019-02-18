@@ -20,7 +20,7 @@ mix
 		postCss: [ tailwindcss('./tailwind.js') ],
 	})
 	.browserSync({
-		proxy: 'project.test',
+		proxy: 'travel.test',
 		notify: {
 			styles: {
 				top: 'auto',

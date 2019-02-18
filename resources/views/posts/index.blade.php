@@ -8,10 +8,51 @@
 					<h2 class="text-3xl mb-8 text-center noselect">@lang('floating.price') <span class="text-5xl lg:text-6xl xl:text-6xl text-yellow-dark block">17.990 kr.</h2>
 
 					<ul class="list-reset">
-						<li class="font-light"><p class="mb-6 items-center font-medium text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i>@lang('floating.one')</p></li>
-						<li class="font-light"><p class="mb-6 items-center font-medium text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i>@lang('floating.two')</p></li>
-						<li class="font-light"><p class="mb-6 items-center font-medium text-green "><i class="fas fa-check-circle pr-2 fa-lg"></i>@lang('floating.three')</p></li>
-						{{-- <li class="font-light"><p class="mb-6 items-center font-medium text-green "><a href="{{ route('sellers', ['lang' => app()->getLocale()]) }}" class="text-green hover:text-green-dark transition"><i class="fas fa-check-circle pr-2 fa-lg"></i>@lang('floating.four')</a></p></li> --}}
+						<li>
+							<div class="flex mb-6 text-green items-center">
+								<div class="w-12 text-center">
+									<p><i class="fas fa-check-circle"></i></p>
+								</div>
+								<div class="w-full font-light">
+									@lang('floating.one')
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="flex mb-6 text-green items-center">
+								<div class="w-12 text-center">
+									<p><i class="fas fa-check-circle"></i></p>
+								</div>
+								<div class="w-full font-light">
+									<p>@lang('floating.two')</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="flex mb-6 text-green items-center">
+								<div class="w-12 text-center">
+									<p><i class="fas fa-check-circle"></i></p>
+								</div>
+								<div class="w-full font-light">
+									<p>@lang('floating.three')</p>
+								</div>
+							</div>
+						</li>
+
+						@if ($sellers->count() > 0)
+							<li>
+								<div class="flex mb-6 text-blue items-center">
+									<div class="w-12 text-center">
+										<p><i class="fas fa-info-circle"></i></p>
+									</div>
+									<div class="w-full font-regular">
+										<a href="{{ route('sellers', ['lang' => app()->getLocale()]) }}" class="text-blue hover:text-blue-dark transition link">
+											@lang('floating.four')
+										</a>
+									</div>
+								</div>
+							</li>
+						@endif
 					</ul>
 
 					{{-- <div class="text-center pt-8">
@@ -38,7 +79,7 @@
 			</div>
 		</div>
 		<div class="container mx-auto">
-			<div class="flex flex-col lg:flex-row xl:flex-row justify-center">
+			<div class="flex flex-col lg:flex-row xl:flex-row justify-center lg:items-center">
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg px-4 py-8 m-6">
 					<h2 class="font-medium text-center text-3xl"><i class="fas fa-phone pr-5"></i>@lang('info.phone')</h2>
 
@@ -57,6 +98,7 @@
 						</li>
 					</ul>
 				</div>
+
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
 					<h2 class="font-medium text-3xl"><i class="fas fa-cloud pr-5"></i>@lang('info.weather')</h2>
 					<h2 class="text-7xl mt-6" id="degrees"></h2>
@@ -64,10 +106,97 @@
 					<small><span id="windd"></span> <span id="wind"></span> m/s</small>
 					<p class="mt-4"><a href="https://www.vedur.is/vedur/spar/stadaspar" class="link" target="_blank" title="Weather | Veður"><small>@lang('info.see_more')</small></a></p>
 				</div>
-				{{-- <div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
-					<h2 class="font-medium text-3xl"><i class="fas fa-coins pr-5"></i>Gjaldmiðlar</h2>
-					<p id="someElement"></p>
-				</div> --}}
+
+				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
+					<h2 class="font-medium text-3xl"><i class="fas fa-coins pr-5"></i>@lang('info.currency')</h2>
+
+					<div class="flex">
+						<div class="w-full">
+
+							{{-- <div>EUR: <input type="text" id="EUR" class="convert-me" data-rate="1" value="0" readonly> </div>
+							<div>ISK: <input type="text" id="ISK" class="convert-me" data-rate="1" value="0" readonly> </div>
+							<div>USD: <input type="text" id="USD" class="convert-me" data-rate="1" value="0" readonly> </div>
+							<div>GBP: <input type="text" id="GBP" class="convert-me" data-rate="1" value="0" readonly> </div> --}}
+
+
+							<table class="w-full mt-4 no-strip">
+								<thead class="flex w-full">
+									<tr class="flex w-full">
+										<th class="p-4 w-1/2 text-xs font-light text-grey uppercase text-left">Gjaldmiðlar</th>
+										<th class="p-4 w-1/2 text-xs font-light text-grey uppercase text-right">Upphæð</th>
+									</tr>
+								</thead>
+								<tbody class="flex flex-col overflow-y-scroll w-full font-light">
+									<tr class="flex items-center mb-2 w-full">
+										<td class="px-4 w-1/3 text-sm">
+											<div class="flex items-center">
+												<div class="w-6 mr-2">
+													<div class="w-6 mr-2">
+														<img src="/css/img/flags/iceland.svg">
+													</div>
+												</div>
+												<div class="w-auto font-medium">ISK</div>
+											</div>
+										</td>
+										<td class="px-4 w-2/3 text-sm">
+											<input type="text" id="currency-input" class="appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark text-right" value="0">
+										</td>
+									</tr>
+
+									<tr class="flex items-center mb-2 w-full">
+										<td class="px-4 w-1/3 text-sm">
+											<div class="flex items-center">
+												<div class="w-6 mr-2">
+													<div class="w-6 mr-2">
+														<img src="/css/img/flags/european-union.svg">
+													</div>
+												</div>
+												<div class="w-auto font-medium">EUR</div>
+											</div>
+										</td>
+										<td class="px-4 w-2/3 text-sm">
+											<input type="text" id="EUR" class="convert-me appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark text-right" data-rate="1" value="0" readonly>
+										</td>
+									</tr>
+
+									<tr class="flex items-center mb-2 w-full">
+										<td class="px-4 w-1/3 text-sm">
+											<div class="flex items-center">
+												<div class="w-6 mr-2">
+													<div class="w-6 mr-2">
+														<img src="/css/img/flags/united-states-of-america.svg">
+													</div>
+												</div>
+												<div class="w-auto font-medium">USD</div>
+											</div>
+										</td>
+										<td class="px-4 w-2/3 text-sm">
+											<input type="text" id="USD" class="convert-me appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark text-right" data-rate="1" value="0" readonly>
+										</td>
+									</tr>
+
+									<tr class="flex items-center mb-2 w-full">
+										<td class="px-4 w-1/3 text-sm">
+											<div class="flex items-center">
+												<div class="w-6 mr-2">
+													<div class="w-6 mr-2">
+														<img src="/css/img/flags/united-kingdom.svg">
+													</div>
+												</div>
+												<div class="w-auto font-medium">GBP</div>
+											</div>
+										</td>
+										<td class="px-4 w-2/3 text-sm">
+											<input type="text" id="GBP" class="convert-me appearance-none block w-full bg-grey-lighter text-grey-darker border-2 border-grey-lighter rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-yellow-dark text-right" data-rate="1" value="0" readonly>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<p class="mt-4"><a href="https://www.vedur.is/vedur/spar/stadaspar" class="link" target="_blank" title="Weather | Veður"><small>Sjá fleiri gjaldmiðla</small></a></p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

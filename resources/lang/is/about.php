@@ -6,6 +6,7 @@
 		'link_1'		=> 	'Um Okkur',
 		'link_2'		=>	'Skilmálar',
 		'link_3'		=>	'Hafðu Samband',
+		'link_4'		=>	'Sölustaðir',
 
 		'side-1'		=>	'Aðeins um okkur',
 		'side-2'		=>	'Skilmálar',
