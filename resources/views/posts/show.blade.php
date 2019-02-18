@@ -39,10 +39,10 @@
 			</div>
 			<div class="w-auto lg:w-1/2 xl:w-1/2 px-12 lg:px-4 xl:px-4 mt-12 lg:mt-0 xl:mt-0">
 				@if (App::isLocale('en'))
-					<h1 class="font-bold text-4xl text-grey-darker mb-6">{{ $camping->en_title }}</h1>
+					<h1 class="font-bold text-5xl text-grey-darker mb-6">{{ $camping->en_title }}</h1>
 					<p class="font-light leading-loose text-md mb-8">{{ $camping->en_body }}</p>
 				@else
-					<h1 class="font-bold text-4xl text-grey-darker mb-6">{{ $camping->title }}</h1>
+					<h1 class="font-bold text-5xl text-grey-darker mb-6">{{ $camping->title }}</h1>
 					<p class="font-light leading-loose text-md mb-8">{{ $camping->body }}</p>
 				@endif
 

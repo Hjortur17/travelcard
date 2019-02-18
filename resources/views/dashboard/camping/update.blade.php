@@ -36,7 +36,7 @@
 							</div>
 						</div>
 
-						<form action="/stjornbord/tjaldsvæði/breyta/{{ $camping->id }}" method="POST">
+						<form action="/stjornbord/tjaldsvæði/breyta/{{ $camping->id }}" method="POST" enctype="multipart/form-data">
 							@method('PATCH')
 							@csrf
 
