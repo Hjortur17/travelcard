@@ -16,6 +16,7 @@
 		'para-1' 		=>	'Travelcard Iceland ehf was established in 2019. The card allows domestic and foreign tourists to enjoy the most beautiful campsites in Iceland in just 17,990 kr.',
 		'para-2' 		=>	'The travel card is valid for TWO adults and an unlimited number of children (0-16 years), such as ONE tent, campervans or motorhomes while the camping sites are open.',
 		'para-3' 		=>	"The travel card contains 28 nights during a period (May 1st - October 1st) and it is only allowed to use it for 4 nights in the same place unless the person departs for 24 hours. We at Travelcard are looking forward to helping you make your travel dreams come true in Iceland's most beautiful natural wonders.",
+		'para-4' 		=>	"Visit us on social media:",
 		
 		'term-1' 		=>	'If the card gets lost it will NOT be refunded.',
 		'term-2' 		=>	'Cards will be activated as soon as the owners name is placed on the card and the person must provide the card at relevant campingsites.',

@@ -25,7 +25,6 @@
 	</script>
 
 	<link rel="stylesheet" href="/css/app.css">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
 </head>
 <body>
 	@if(Route::current()->getName() == 'home')

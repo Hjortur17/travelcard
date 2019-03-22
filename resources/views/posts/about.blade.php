@@ -35,14 +35,22 @@
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
 					<div class="flex flex-wrap">
 						<div class="w-full">
-							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
+							<p class="font-light text-grey-darker text-lg leading-loose mb-6">
 								@lang('about.para-1')
 							</p>
-							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
+							<p class="font-light text-grey-darker text-lg leading-loose mb-6">
 								@lang('about.para-2')
 							</p>
-							<p class="font-light link text-grey-darker text-lg leading-loose">
+							<p class="font-light text-grey-darker text-lg leading-loose mb-6">
 								@lang('about.para-3')
+							</p>
+							<p class="font-light text-grey-darker text-lg leading-loose">
+								<strong>@lang('about.para-4')</strong>
+								<ul class="list-reset pt-2">
+									<li>
+										<a href="https://www.instagram.com/travelcard.is" class="no-underline font-light text-purple-light hover:text-purple-dark transition-lg" title="Follow us on Instagram" target="_blank">Instagram</a>
+									</li>
+								</ul>
 							</p>
 						</div>
 					</div>
