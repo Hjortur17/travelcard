@@ -2,7 +2,11 @@
 	<div class="container mx-auto px-4">
 		<div class="flex justify-between pt-8">
 			<div class="text-grey-darker pl-4 lg:pl-0 xl:pl-0">
-				<img src="/css/img/logo.png" class="h-8 lg:h-24 xl:h-24" alt="Logo | Travelcard Iceland">
+				<picture>
+					<source src="/css/img/logo.webp" type="image/webp" class="h-8 lg:h-24 xl:h-24">
+					<source src="/css/img/logo.png" type="image/png" class="h-8 lg:h-24 xl:h-24">
+					<img src="/css/img/logo.png" class="h-8 lg:h-24 xl:h-24" alt="Logo | Travelcard Iceland">
+				</picture>
 			</div>
 			<ul class="list-reset flex items-center float-right">
 				<li class="pr-4 lg:pr-16 xl:pr-16">

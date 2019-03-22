@@ -12,7 +12,11 @@
 		<div class="container mx-auto pt-20">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
 				<div class="w-auto lg:w-1/4 xl:w-1/4 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center">
-					<img class="w-32 block mx-auto opacity-75" src="/css/img/firdir/bvl.png" alt="Vesturland / West">
+					<picture>
+						<source src="/css/img/bvl.webp" type="image/webp" class="w-32 block mx-auto opacity-75">
+						<source src="/css/img/bvl.png" type="image/png" class="w-32 block mx-auto opacity-75">
+						<img src="/css/img/firdir/bvl.png" class="w-32 block mx-auto opacity-75" alt="Vesturland / West">
+					</picture>
 					<h1 class="mb-4">@lang('states.west')</h1>
 				</div>
 				<div class="w-auto lg:w-3/4 xl:w-3/4 px-12 text-center lg:text-left xl:text-left">
@@ -36,7 +40,11 @@
 		<div class="container mx-auto pt-20">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
 				<div class="w-auto lg:w-1/4 xl:w-1/4 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center">
-					<img class="w-32 block mx-auto opacity-75" src="/css/img/firdir/bvf.png" alt="Vestfirðir / Westfjords">
+					<picture>
+						<source src="/css/img/bvf.webp" type="image/webp" class="w-32 block mx-auto opacity-75">
+						<source src="/css/img/bvf.png" type="image/png" class="w-32 block mx-auto opacity-75">
+						<img src="/css/img/firdir/bvf.png" class="w-32 block mx-auto opacity-75" alt="Vestfirðir / Westfjords">
+					</picture>
 					<h1 class="mb-4">@lang('states.westfjords')</h1>
 				</div>
 				<div class="w-auto lg:w-3/4 xl:w-3/4 px-12 text-center lg:text-left xl:text-left">
@@ -60,7 +68,11 @@
 		<div class="container mx-auto pt-20">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
 				<div class="w-auto lg:w-1/4 xl:w-1/4 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center">
-					<img class="w-32 block mx-auto opacity-75" src="/css/img/firdir/bn.png" alt="Norðurland / North">
+					<picture>
+						<source src="/css/img/bn.webp" type="image/webp" class="w-32 block mx-auto opacity-75">
+						<source src="/css/img/bn.png" type="image/png" class="w-32 block mx-auto opacity-75">
+						<img src="/css/img/firdir/bn.png" class="w-32 block mx-auto opacity-75" alt="Norðurland / North">
+					</picture>
 					<h1 class="mb-4">@lang('states.north')</h1>
 				</div>
 				<div class="w-auto lg:w-3/4 xl:w-3/4 px-12 text-center lg:text-left xl:text-left">
@@ -84,7 +96,11 @@
 		<div class="container mx-auto pt-20">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
 				<div class="w-auto lg:w-1/4 xl:w-1/4 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center">
-					<img class="w-32 block mx-auto opacity-75" src="/css/img/firdir/ba.png" alt="Austurland / East">
+					<picture>
+						<source src="/css/img/ba.webp" type="image/webp" class="w-32 block mx-auto opacity-75">
+						<source src="/css/img/ba.png" type="image/png" class="w-32 block mx-auto opacity-75">
+						<img src="/css/img/firdir/ba.png" class="w-32 block mx-auto opacity-75" alt="Austurland / East">
+					</picture>
 					<h1 class="mb-4">@lang('states.east')</h1>
 				</div>
 				<div class="w-auto lg:w-3/4 xl:w-3/4 px-12 text-center lg:text-left xl:text-left">
@@ -108,7 +124,11 @@
 		<div class="container mx-auto pt-20">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
 				<div class="w-auto lg:w-1/4 xl:w-1/4 border-0 lg:border-r-4 xl:border-r-4 border-yellow-dark text-center">
-					<img class="w-32 block mx-auto opacity-75" src="/css/img/firdir/bs.png" alt="Suðurland / South">
+					<picture>
+						<source src="/css/img/bs.webp" type="image/webp" class="w-32 block mx-auto opacity-75">
+						<source src="/css/img/bs.png" type="image/png" class="w-32 block mx-auto opacity-75">
+						<img src="/css/img/firdir/bs.png" class="w-32 block mx-auto opacity-75" alt="Suðurland / South">
+					</picture>
 					<h1 class="mb-4">@lang('states.south')</h1>
 				</div>
 				<div class="w-auto lg:w-3/4 xl:w-3/4 px-12 text-center lg:text-left xl:text-left">
