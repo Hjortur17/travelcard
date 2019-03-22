@@ -126,7 +126,7 @@
 
 							<div class="md:flex md:items-center mb-6">
 								<div class="md:w-1/5">
-									<label class="block text-grey font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+									<label class="block text-grey font-medium md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
 										@lang('contact.name')
 									</label>
 								</div>
@@ -136,7 +136,7 @@
 							</div>
 							<div class="md:flex md:items-center mb-6">
 								<div class="md:w-1/5">
-									<label class="block text-grey font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-email">
+									<label class="block text-grey font-medium md:text-right mb-1 md:mb-0 pr-4" for="inline-email">
 										@lang('contact.email')
 									</label>
 								</div>
@@ -146,7 +146,7 @@
 							</div>
 							<div class="md:flex md:items-center mb-6">
 								<div class="md:w-1/5">
-									<label class="block text-grey font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-subject">
+									<label class="block text-grey font-medium md:text-right mb-1 md:mb-0 pr-4" for="inline-subject">
 										@lang('contact.subject')
 									</label>
 								</div>
@@ -156,7 +156,7 @@
 							</div>
 							<div class="md:flex md:items-center mb-6">
 								<div class="md:w-1/5">
-									<label class="block text-grey font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-message">
+									<label class="block text-grey font-medium md:text-right mb-1 md:mb-0 pr-4" for="inline-message">
 										@lang('contact.message')
 									</label>
 								</div>
