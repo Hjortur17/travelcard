@@ -7,11 +7,5 @@
 
 require('./bootstrap');
 
-// window.Vue = require('vue');
-
-// Vue.component('edit', require('./components/editThreadComponent.vue'));
-
-// const app = new Vue({
-// 	el: '#app',
-// });
-
+var Turbolinks = require("turbolinks")
+Turbolinks.start()

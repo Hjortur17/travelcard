@@ -20,7 +20,7 @@
 					<h1 class="mb-4">@lang('states.west')</h1>
 				</div>
 				<div class="w-auto lg:w-3/4 xl:w-3/4 px-12 text-center lg:text-left xl:text-left">
-					<div class="flex bg-grey-lighter text-center items-center">
+					<div class="flex text-center items-center">
 						@if ($places->contains('state', 'vesturland'))
 							@foreach ($vl_places as $place)
 								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
@@ -48,7 +48,7 @@
 					<h1 class="mb-4">@lang('states.westfjords')</h1>
 				</div>
 				<div class="w-auto lg:w-3/4 xl:w-3/4 px-12 text-center lg:text-left xl:text-left">
-					<div class="flex bg-grey-lighter text-center items-center">
+					<div class="flex text-center items-center">
 						@if ($places->contains('state', 'vestfirdir'))
 							@foreach ($vf_places as $place)
 								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
@@ -76,7 +76,7 @@
 					<h1 class="mb-4">@lang('states.north')</h1>
 				</div>
 				<div class="w-auto lg:w-3/4 xl:w-3/4 px-12 text-center lg:text-left xl:text-left">
-					<div class="flex bg-grey-lighter text-center items-center">
+					<div class="flex text-center items-center">
 						@if ($places->contains('state', 'nordurland'))
 							@foreach ($n_places as $place)
 								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
@@ -104,7 +104,7 @@
 					<h1 class="mb-4">@lang('states.east')</h1>
 				</div>
 				<div class="w-auto lg:w-3/4 xl:w-3/4 px-12 text-center lg:text-left xl:text-left">
-					<div class="flex bg-grey-lighter text-center items-center">
+					<div class="flex text-center items-center">
 						@if ($places->contains('state', 'austurland'))
 							@foreach ($a_places as $place)
 								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">
@@ -132,7 +132,7 @@
 					<h1 class="mb-4">@lang('states.south')</h1>
 				</div>
 				<div class="w-auto lg:w-3/4 xl:w-3/4 px-12 text-center lg:text-left xl:text-left">
-					<div class="flex bg-grey-lighter text-center items-center">
+					<div class="flex text-center items-center">
 						@if ($places->contains('state', 'sudurland'))
 							@foreach ($s_places as $place)
 								<div class="w-auto lg:w-64 xl:w-64 p-2 text-center lg:text-left xl:text-left">

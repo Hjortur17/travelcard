@@ -15,7 +15,7 @@
 					<h1 class="mb-12">@lang('qa.side')</h1>
 				</div>
 				<div class="w-auto lg:w-4/5 xl:w-4/5 px-12 text-center lg:text-left xl:text-left">
-					<div class="flex flex-wrap bg-grey-lighter">
+					<div class="flex flex-wrap">
 						<div class="w-full">
 							<p class="font-light link text-grey-darker text-lg leading-loose mb-6">
 								<strong>@lang('qa.q1')</strong> <br>

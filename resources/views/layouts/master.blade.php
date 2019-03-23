@@ -24,7 +24,8 @@
 		gtag('config', 'UA-133292402-1');
 	</script>
 
-	<link rel="stylesheet" href="/css/app.css">
+	<link href="/css/app.css" rel="stylesheet">
+	<script src="/js/app.js"></script>
 </head>
 <body>
 	@if(Route::current()->getName() == 'home')
