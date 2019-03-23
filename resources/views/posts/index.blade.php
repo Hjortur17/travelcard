@@ -11,7 +11,7 @@
 						<li>
 							<div class="flex mb-6 text-green items-center">
 								<div class="w-12 text-center">
-									<p><i class="fas fa-check-circle"></i></p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 17.292l-4.5-4.364 1.857-1.858 2.643 2.506 5.643-5.784 1.857 1.857-7.5 7.643z" fill="#38c172"/></svg>
 								</div>
 								<div class="w-full font-light">
 									@lang('floating.one')
@@ -21,7 +21,7 @@
 						<li>
 							<div class="flex mb-6 text-green items-center">
 								<div class="w-12 text-center">
-									<p><i class="fas fa-check-circle"></i></p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 17.292l-4.5-4.364 1.857-1.858 2.643 2.506 5.643-5.784 1.857 1.857-7.5 7.643z" fill="#38c172"/></svg>
 								</div>
 								<div class="w-full font-light">
 									<p>@lang('floating.two')</p>
@@ -31,7 +31,7 @@
 						<li>
 							<div class="flex mb-6 text-green items-center">
 								<div class="w-12 text-center">
-									<p><i class="fas fa-check-circle"></i></p>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 17.292l-4.5-4.364 1.857-1.858 2.643 2.506 5.643-5.784 1.857 1.857-7.5 7.643z" fill="#38c172"/></svg>
 								</div>
 								<div class="w-full font-light">
 									<p>@lang('floating.three')</p>
