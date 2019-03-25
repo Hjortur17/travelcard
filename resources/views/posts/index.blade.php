@@ -210,6 +210,7 @@
 
 @section ('script-section')
 	<script src="/js/app.js" type="text/javascript"></script>
+	<script src="/js/navbar.min.js" type="text/javascript"></script>
 	<script src="/js/weather.min.js" type="text/javascript"></script>
 	<script src="/js/currency.min.js" type="text/javascript"></script>
 @endsection

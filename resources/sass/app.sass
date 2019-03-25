@@ -14,7 +14,7 @@ body
 	@apply text-grey-darker bg-grey-lightest
 
 header
-	background: url('/css/img/background.jpg')
+	background: url('/css/img/background.jpg') 100% 100%
 	background-size: cover
 	background-position: center 
 	background-repeat: no-repeat
@@ -58,9 +58,16 @@ header
 .break-all
 	word-break: break-all
 
-// tr:nth-child(even)
-// 	@apply bg-grey-lightest text-grey-darker rounded-lg
+.change .bar1 
+	-webkit-transform: rotate(-45deg) translate(0px,0px)
+	transform: rotate(-45deg) translate(0px,0px)
 
+.change .bar2 
+	opacity: 0
+
+.change .bar3
+	-webkit-transform: rotate(45deg) translate(-8px, -8px)
+	transform: rotate(45deg) translate(-8px, -8px)
 
 
 @tailwind preflight

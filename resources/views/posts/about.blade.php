@@ -131,5 +131,6 @@
 
 @section ('script-section')
 	<script src="/js/app.js" type="text/javascript"></script>
+	<script src="/js/navbar.min.js" type="text/javascript"></script>
 	<script src="/js/smoothScroll.js" type="text/javascript"></script>
 @endsection
