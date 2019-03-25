@@ -65,7 +65,7 @@
 				</ul>
 			</div>
 			<div class="w-auto lg:w-1/5 xl:w-1/5 text-center">
-				<picture>
+				<picture class="h-32">
 					<source src="/css/img/a.webp" type="image/webp" class="w-32 mt-8 lg:mt-0 xl:mt-0">
 					<source src="/css/img/a.png" type="image/png" class="w-32 mt-8 lg:mt-0 xl:mt-0">
 					<img src="/css/img/firdir/a.png" class="w-32 mt-8 lg:mt-0 xl:mt-0" alt="Austurland / East">
