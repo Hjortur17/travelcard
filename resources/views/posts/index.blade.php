@@ -81,7 +81,7 @@
 		<div class="container mx-auto">
 			<div class="flex flex-col lg:flex-row xl:flex-row justify-center lg:items-center">
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg px-4 py-8 m-6">
-					<h2 class="font-medium text-center text-3xl">@lang('info.phone')</h2>
+					<h2 class="font-bold text-center text-3xl">@lang('info.phone')</h2>
 
 					<ul class="list-reset mt-6 px-8">
 						<li class="mb-4">
@@ -100,7 +100,7 @@
 				</div>
 
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
-					<h2 class="font-medium text-3xl">@lang('info.weather')</h2>
+					<h2 class="font-bold text-3xl">@lang('info.weather')</h2>
 					<h2 class="text-7xl mt-6" id="degrees"></h2>
 					<p id="city"></p>
 					<small><span id="windd"></span> <span id="wind"></span> m/s</small>
@@ -108,7 +108,7 @@
 				</div>
 
 				<div class="w-auto lg:w-1/3 xl:w-1/3 bg-white rounded-lg shadow-lg text-center px-4 py-8 m-6">
-					<h2 class="font-medium text-3xl">@lang('info.currency')</h2>
+					<h2 class="font-bold text-3xl">@lang('info.currency')</h2>
 
 					<div class="flex">
 						<div class="w-full">
