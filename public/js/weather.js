@@ -1,9 +1,6 @@
 $(document).ready(function () {
 	$.ajax({
-		'url': 'https://apis.is/weather/forecasts/is',
-		'type': 'GET',
-		'dataType': 'json',
-		'data': {'stations': '1,422'},
+		'url': '/storage/files/weather.json',
 		'success': function (response) {
 			let degrees 	= 	response.results[0].forecast[1].T 					// W = lýsing
 			let city 	= 	response.results[0].name 						// F = vindhraði

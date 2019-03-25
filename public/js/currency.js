@@ -11,9 +11,7 @@ $(function() {
 	});
 
 	$.ajax({
-		url: 'https://apis.is/currency/arion',
-		type: 'GET',
-		dataType: 'json',
+		url: '/storage/files/currency.json',
 		success: function (response) {
 			// array of items we want from result. This is better than assuming the results will be at specific indexes
 			let currencies = ['ISK', 'EUR', 'USD', 'GBP']; 
