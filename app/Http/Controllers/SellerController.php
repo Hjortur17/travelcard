@@ -16,9 +16,7 @@ class SellerController extends Controller
 
 	public function index()
        {
-              $sellers = Seller::latest()->get();
-
-              return view('dashboard.sellers.index', compact('sellers'));
+              return view('dashboard.sellers.index');
        }
 
        public function show()

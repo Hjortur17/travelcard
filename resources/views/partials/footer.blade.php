@@ -10,7 +10,7 @@
 				<h2 class="font-medium text-white py-6">@lang('states.west')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'vesturland'))
-						@foreach ($vl_places as $place)
+						@foreach ($places->where('state', 'vesturland') as $place)
 							<li>
 								<a href="{{ $place->path() }}" class="font-light link pb-8">{{ $place->title }}</a>
 							</li>
@@ -31,7 +31,7 @@
 				<h2 class="font-medium text-white py-6">@lang('states.westfjords')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'vestfirdir'))
-						@foreach ($vf_places as $place)
+						@foreach ($places->where('state', 'vestfirdir') as $place)
 							<li>
 								<a href="{{ $place->path() }}" class="font-light link pb-8">{{ $place->title }}</a>
 							</li>
@@ -52,7 +52,7 @@
 				<h2 class="font-medium text-white py-6">@lang('states.north')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'nordurland'))
-						@foreach ($n_places as $place)
+						@foreach ($places->where('state', 'nordurland') as $place)
 							<li>
 								<a href="{{ $place->path() }}" class="font-light link pb-8">{{ $place->title }}</a>
 							</li>
@@ -73,7 +73,7 @@
 				<h2 class="font-medium text-white py-6">@lang('states.east')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'austurland'))
-						@foreach ($a_places as $place)
+						@foreach ($places->where('state', 'austurland') as $place)
 							<li>
 								<a href="{{ $place->path() }}" class="font-light link pb-8">{{ $place->title }}</a>
 							</li>
@@ -94,11 +94,15 @@
 				<h2 class="font-medium text-white py-6">@lang('states.south')</h2>
 				<ul class="list-reset px-2">
 					@if ($places->contains('state', 'sudurland'))
-						@foreach ($s_places as $place)
+						@foreach ($places->where('state', 'sudurland') as $place)
 							<li>
 								<a href="{{ $place->path() }}" class="font-light link pb-8">{{ $place->title }}</a>
 							</li>
 						@endforeach
+					@else
+						<li>
+							<p class="font-light link text-grey-darker">@lang('camping.announcment')</p>
+						</li>
 					@endif
 				</ul>
 			</div>

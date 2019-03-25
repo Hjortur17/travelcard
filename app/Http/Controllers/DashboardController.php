@@ -17,10 +17,8 @@ class DashboardController extends Controller
 
        public function index()
        {
-              $camping = Camping::latest()->get();
-              $sellers = Seller::latest()->get();
               $users = User::all();
 
-              return view('dashboard.index', compact('camping', 'sellers', 'users'));
+              return view('dashboard.index', compact('users'));
        }
 }

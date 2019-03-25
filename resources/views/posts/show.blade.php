@@ -11,27 +11,27 @@
 					<ul class="list-reset">
 						<li class="font-light">
 							<p class="mb-6 items-center">
-								<i class="fal fa-map-pin w-12 fa-lg text-center"></i>{{ $camping->address }}
+								pin {{ $camping->address }}
 							</p>
 						</li>
 						<li class="font-light">
 							<p class="mb-6 items-center">
-								<i class="fal fa-mobile w-12 fa-lg text-center"></i><a class="link " href="tel:+354 {{ $camping->phone }}">{{ $camping->phone }}</a>
+								phone <a class="link " href="tel:+354 {{ $camping->phone }}">{{ $camping->phone }}</a>
 							</p>
 						</li>
 						<li class="font-light">
 							<p class="mb-6 items-center">
-								<i class="fal fa-envelope w-12 fa-lg text-center"></i><a class="link " href="mailto:{{ $camping->email }}">{{ $camping->email }}</a>
+								envelope <a class="link " href="mailto:{{ $camping->email }}">{{ $camping->email }}</a>
 							</p>
 						</li>
 						<li class="font-light">
 							<p class="mb-6 items-center">
-								<i class="fal fa-globe-europe w-12 fa-lg text-center"></i><a class="link " href="{{ $camping->website }}" target="_blank">{{ $camping->website }}</a>
+								globe <a class="link " href="{{ $camping->website }}" target="_blank">{{ $camping->website }}</a>
 							</p>
 						</li>
 						<li class="font-light">
 							<p class="mb-6 items-center">
-								<i class="fal fa-calendar w-12 fa-lg text-center"></i>{{ $camping->opening }}
+								calendar {{ $camping->opening }}
 							</p>
 						</li>
 					</ul>

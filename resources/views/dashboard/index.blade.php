@@ -33,7 +33,7 @@
 						<h2 class="text-yellow-dark text-4xl mb-8">Tjaldsvæði</h2>
 						<div class="flex items-center">
 							<div class="w-3/4">
-								<h3 class="text-8xl font-bold">{{ $camping->count() }}</h3>
+								<h3 class="text-8xl font-bold">{{ $places->count() }}</h3>
 							</div>
 							<div class="w-1/4 text-left font-light">
 								<p class="pb-2"><a href="/stjornbord/tjaldsvæði/bæta" class="link">Bæta við</a></p>

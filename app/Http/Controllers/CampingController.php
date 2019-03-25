@@ -20,15 +20,7 @@ class CampingController extends Controller
 	{
 		App::setlocale($lang);
 		
-		$places = Camping::latest()->get(); 
-		
-		$vl_places = Camping::where('state', 'vesturland')->get();
-		$vf_places = Camping::where('state', 'vestfirdir')->get();
-		$n_places = Camping::where('state', 'nordurland')->get();
-		$a_places = Camping::where('state', 'austurland')->get();
-		$s_places = Camping::where('state', 'sudurland')->get();
-
-		return view('posts.camping', compact('places','vl_places','vf_places','n_places','n_places','a_places','s_places'));
+		return view('posts.camping');
 	}
 
 	public function show($lang, Camping $camping) 
@@ -41,10 +33,9 @@ class CampingController extends Controller
 
 	public function dashboardIndex()
        {
-              $camping = Camping::latest()->get();
               $tags = Tag::all();
 
-              return view('dashboard.camping.index', compact('camping', 'tags'));
+              return view('dashboard.camping.index', compact('tags'));
        }
 
 

@@ -14,15 +14,6 @@ class HomeController extends Controller
 	{
 		App::setlocale($lang);
 
-		$places = Camping::latest()->get();
-		$sellers = Seller::latest()->get();
-		
-		$vl_places = Camping::where('state', 'vesturland')->get();
-		$vf_places = Camping::where('state', 'vestfirdir')->get();
-		$n_places = Camping::where('state', 'nordurland')->get();
-		$a_places = Camping::where('state', 'austurland')->get();
-		$s_places = Camping::where('state', 'sudurland')->get();
-
-		return view('posts.index', compact('places','sellers','vl_places','vf_places','n_places','n_places','a_places','s_places'));
+		return view('posts.index');
 	}
 }

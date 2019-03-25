@@ -5,7 +5,7 @@
 		<div class="flex">
 			<div class="w-1/2 text-left">
 				<h1 class="text-white mb-4">Tjaldsvæði</h1>
-				<h1 class="text-white text-7xl">{{ $camping->count() }}</h1>
+				<h1 class="text-white text-7xl">{{ $places->count() }}</h1>
 			</div>
 			<div class="w-1/2 text-right self-center">
 				<h1 class="text-white font-light text-lg mb-2">{{ Auth::user()->name }}</h1>
@@ -40,7 +40,7 @@
 									</tr>
 								</thead>
 								<tbody class="flex flex-col overflow-y-scroll w-full font-light">
-									@foreach ($camping as $site)
+									@foreach ($places as $site)
 										<tr class="flex w-full">
 											<td class="p-4 w-1/3 text-md">{{ $site->title }}</td>
 											<td class="p-4 w-1/3 text-md">{{ ucfirst($site->state) }}</td>

@@ -5,7 +5,7 @@
 		<div class="flex">
 			<div class="w-1/2 text-left">
 				<h1 class="text-white mb-4">Tjaldsvæði</h1>
-				<h1 class="text-white text-7xl">{{ $camping->count() }}</h1>
+				<h1 class="text-white text-7xl">{{ $places->count() }}</h1>
 			</div>
 			<div class="w-1/2 text-right self-center">
 				<h1 class="text-white font-light text-lg mb-2">{{ Auth::user()->name }}</h1>
